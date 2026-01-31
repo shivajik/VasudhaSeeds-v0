@@ -41,10 +41,10 @@ export function Footer() {
           {/* Brand */}
           <div className="lg:col-span-2">
             <Link href="/" className="flex items-center gap-2">
-              <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary">
-                <Leaf className="h-5 w-5 text-primary-foreground" />
+              <div className="flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-full bg-primary flex-shrink-0">
+                <Leaf className="h-4 w-4 sm:h-5 sm:w-5 text-primary-foreground" />
               </div>
-              <span className="font-serif text-xl font-bold">Vasudha Agri Biotech</span>
+              <span className="font-serif text-lg sm:text-xl font-bold">Vasudha Agri Biotech</span>
             </Link>
             <p className="mt-4 text-card/70 leading-relaxed max-w-sm">
               Transforming agriculture through high-quality seeds since 2015. Committed to 
@@ -111,15 +111,15 @@ export function Footer() {
         </div>
 
         {/* Bottom Bar */}
-        <div className="mt-12 pt-8 border-t border-card/10 flex flex-col sm:flex-row justify-between items-center gap-4">
-          <p className="text-sm text-card/60">
+        <div className="mt-12 pt-8 border-t border-card/10 flex flex-col sm:flex-row justify-between items-center gap-4 text-center sm:text-left">
+          <p className="text-xs sm:text-sm text-card/60">
             © {new Date().getFullYear()} Vasudha Agri Biotech Pvt. Ltd. All rights reserved.
           </p>
-          <div className="flex gap-6">
-            <Link href="#" className="text-sm text-card/60 hover:text-primary transition-colors">
+          <div className="flex gap-4 sm:gap-6">
+            <Link href="#" className="text-xs sm:text-sm text-card/60 hover:text-primary transition-colors">
               Privacy Policy
             </Link>
-            <Link href="#" className="text-sm text-card/60 hover:text-primary transition-colors">
+            <Link href="#" className="text-xs sm:text-sm text-card/60 hover:text-primary transition-colors">
               Terms of Service
             </Link>
           </div>

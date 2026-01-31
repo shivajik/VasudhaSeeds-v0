@@ -145,7 +145,7 @@ export function Hero() {
 
                 {/* Description */}
                 <p
-                  className={`mt-6 text-lg text-card/90 leading-relaxed max-w-xl transition-all duration-500 ${
+                  className={`mt-4 sm:mt-6 text-sm sm:text-lg text-card/90 leading-relaxed max-w-xl transition-all duration-500 ${
                     index === currentSlide
                       ? "opacity-100 translate-y-0 delay-700"
                       : direction === "right"
@@ -182,7 +182,7 @@ export function Hero() {
 
                 {/* Stats */}
                 <div
-                  className={`mt-12 grid grid-cols-3 gap-8 border-t border-card/20 pt-8 transition-all duration-500 ${
+                  className={`mt-8 sm:mt-12 grid grid-cols-3 gap-4 sm:gap-8 border-t border-card/20 pt-6 sm:pt-8 transition-all duration-500 ${
                     index === currentSlide
                       ? "opacity-100 translate-y-0 delay-[1100ms]"
                       : "opacity-0 translate-y-4"
@@ -190,10 +190,10 @@ export function Hero() {
                 >
                   {stats.map((stat, i) => (
                     <div key={i}>
-                      <p className="font-serif text-3xl sm:text-4xl font-bold text-card">
+                      <p className="font-serif text-2xl sm:text-4xl font-bold text-card">
                         {stat.value}
                       </p>
-                      <p className="mt-1 text-sm text-card/70">{stat.label}</p>
+                      <p className="mt-1 text-xs sm:text-sm text-card/70">{stat.label}</p>
                     </div>
                   ))}
                 </div>
@@ -220,7 +220,7 @@ export function Hero() {
       </button>
 
       {/* Bottom Controls */}
-      <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex items-center gap-6">
+      <div className="absolute bottom-4 sm:bottom-8 left-1/2 -translate-x-1/2 z-20 flex items-center gap-3 sm:gap-6">
         {/* Play/Pause Button */}
         <button
           onClick={() => setIsPlaying(!isPlaying)}
@@ -228,21 +228,21 @@ export function Hero() {
           aria-label={isPlaying ? "Pause slideshow" : "Play slideshow"}
         >
           {isPlaying ? (
-            <Pause className="h-4 w-4" />
+            <Pause className="h-3 w-3 sm:h-4 sm:w-4" />
           ) : (
-            <Play className="h-4 w-4" />
+            <Play className="h-3 w-3 sm:h-4 sm:w-4" />
           )}
         </button>
 
         {/* Slide Indicators with Progress */}
-        <div className="flex items-center gap-3">
+        <div className="flex items-center gap-2 sm:gap-3">
           {slides.map((_, index) => (
             <button
               key={index}
               onClick={() =>
                 goToSlide(index, index > currentSlide ? "right" : "left")
               }
-              className="relative h-1 w-12 rounded-full bg-card/30 overflow-hidden group"
+              className="relative h-1 w-6 sm:w-12 rounded-full bg-card/30 overflow-hidden group"
               aria-label={`Go to slide ${index + 1}`}
             >
               <div
@@ -260,7 +260,7 @@ export function Hero() {
         </div>
 
         {/* Slide Counter */}
-        <div className="text-card text-sm font-medium">
+        <div className="text-card text-xs sm:text-sm font-medium">
           <span className="text-accent">{String(currentSlide + 1).padStart(2, "0")}</span>
           <span className="mx-1">/</span>
           <span>{String(slides.length).padStart(2, "0")}</span>

@@ -247,7 +247,7 @@ export default function AboutPage() {
               {/* Timeline Line */}
               <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-border -translate-x-1/2" />
 
-              <div className="space-y-8 md:space-y-12">
+              <div className="space-y-6 md:space-y-12">
                 {milestones.map((milestone, index) => (
                   <div
                     key={milestone.year}
@@ -255,22 +255,26 @@ export default function AboutPage() {
                       index % 2 === 0 ? "md:flex-row" : "md:flex-row-reverse"
                     }`}
                   >
+                    {/* Mobile: Timeline dot on left */}
+                    <div className="md:hidden absolute left-0 top-0 h-full w-0.5 bg-border">
+                      <div className="absolute top-2 -left-1.5 h-4 w-4 rounded-full bg-primary border-4 border-background" />
+                    </div>
                     <div
-                      className={`md:w-1/2 ${index % 2 === 0 ? "md:text-right md:pr-12" : "md:pl-12"}`}
+                      className={`pl-8 md:pl-0 md:w-1/2 ${index % 2 === 0 ? "md:text-right md:pr-12" : "md:pl-12"}`}
                     >
-                      <Card className="bg-card inline-block">
-                        <CardContent className="p-6">
+                      <Card className="bg-card md:inline-block w-full md:w-auto">
+                        <CardContent className="p-4 sm:p-6">
                           <span className="text-sm font-bold text-primary">{milestone.year}</span>
-                          <h3 className="font-serif text-xl font-semibold text-foreground mt-2">
+                          <h3 className="font-serif text-lg sm:text-xl font-semibold text-foreground mt-2">
                             {milestone.title}
                           </h3>
-                          <p className="text-sm text-muted-foreground mt-2 leading-relaxed">
+                          <p className="text-xs sm:text-sm text-muted-foreground mt-2 leading-relaxed">
                             {milestone.description}
                           </p>
                         </CardContent>
                       </Card>
                     </div>
-                    {/* Dot */}
+                    {/* Desktop: Dot in center */}
                     <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 h-4 w-4 rounded-full bg-primary border-4 border-background" />
                     <div className="md:w-1/2" />
                   </div>

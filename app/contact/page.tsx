@@ -24,7 +24,7 @@ const contactInfo = [
   {
     icon: Building2,
     title: "Head Office",
-    details: ["BharatSeeds Complex, Nashik Road", "Nashik, Maharashtra - 422101"],
+    details: ["Vasudha Agri Biotech Complex", "Maharashtra, India"],
   },
   {
     icon: Phone,
@@ -34,7 +34,7 @@ const contactInfo = [
   {
     icon: Mail,
     title: "Email",
-    details: ["info@bharatseeds.com", "sales@bharatseeds.com"],
+    details: ["info@vasudhaagri.com", "sales@vasudhaagri.com"],
   },
   {
     icon: Clock,
@@ -47,19 +47,19 @@ const departments = [
   {
     icon: Users,
     title: "Sales Enquiry",
-    email: "sales@bharatseeds.com",
+    email: "sales@vasudhaagri.com",
     description: "For bulk orders and dealer partnerships",
   },
   {
     icon: Headphones,
     title: "Farmer Support",
-    email: "support@bharatseeds.com",
+    email: "support@vasudhaagri.com",
     description: "For crop guidance and technical queries",
   },
   {
     icon: Building2,
     title: "Corporate Office",
-    email: "corporate@bharatseeds.com",
+    email: "corporate@vasudhaagri.com",
     description: "For business and media inquiries",
   },
 ]
@@ -293,9 +293,9 @@ export default function ContactPage() {
                       <MapPin className="h-12 w-12 text-primary mx-auto mb-4" />
                       <p className="font-semibold text-foreground">Visit Our Office</p>
                       <p className="text-sm text-muted-foreground mt-2">
-                        BharatSeeds Complex, Nashik Road
+                        Vasudha Agri Biotech Complex
                         <br />
-                        Nashik, Maharashtra - 422101
+                        Maharashtra, India
                       </p>
                     </div>
                   </div>
@@ -312,8 +312,8 @@ export default function ContactPage() {
               Looking for a Dealer Near You?
             </h2>
             <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
-              Find your nearest authorized BharatSeeds dealer from our network of 5000+
-              dealers across India.
+              Find your nearest authorized Vasudha Agri Biotech dealer from our network 
+              across India.
             </p>
             <Button size="lg" className="mt-6 gap-2">
               Find Dealer

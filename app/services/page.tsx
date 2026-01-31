@@ -16,9 +16,9 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 
 export const metadata = {
-  title: "Our Services - BharatSeeds | Comprehensive Farmer Support",
+  title: "Our Services - Vasudha Agri Biotech | Comprehensive Farmer Support",
   description:
-    "Discover BharatSeeds services - R&D, quality assurance, pan-India distribution, farmer training, 24/7 support, and sustainable farming solutions.",
+    "Discover Vasudha Agri Biotech services - R&D, quality assurance, pan-India distribution, farmer training, 24/7 support, and sustainable farming solutions.",
 }
 
 const services = [
@@ -100,7 +100,7 @@ const processSteps = [
   {
     step: "01",
     title: "Connect with Us",
-    description: "Reach out via our helpline, website, or visit your nearest BharatSeeds dealer.",
+    description: "Reach out via our helpline, website, or visit your nearest Vasudha Agri Biotech dealer.",
   },
   {
     step: "02",
@@ -218,7 +218,7 @@ export default function ServicesPage() {
                 How It Works
               </p>
               <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground leading-tight text-balance">
-                Your Journey with BharatSeeds
+                Your Journey with Vasudha Agri Biotech
               </h2>
             </div>
 
@@ -252,7 +252,7 @@ export default function ServicesPage() {
               Ready to Transform Your Farm?
             </h2>
             <p className="mt-4 text-lg text-primary-foreground/90 max-w-2xl mx-auto">
-              Join millions of farmers who have achieved better yields with BharatSeeds.
+              Join thousands of farmers who have achieved better yields with Vasudha Agri Biotech.
               Contact us today for personalized guidance.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">

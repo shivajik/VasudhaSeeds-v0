@@ -229,10 +229,10 @@ export default function ProductsPage() {
               </div>
 
               {/* Filter Tabs */}
-              <div className="flex flex-wrap gap-2">
+              <div className="flex flex-wrap gap-2 w-full sm:w-auto overflow-x-auto pb-2 sm:pb-0 -mx-4 px-4 sm:mx-0 sm:px-0">
                 <button
                   onClick={() => setActiveFilter("all")}
-                  className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+                  className={`px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium transition-colors whitespace-nowrap ${
                     activeFilter === "all"
                       ? "bg-primary text-primary-foreground"
                       : "bg-card text-muted-foreground hover:bg-muted"
@@ -244,7 +244,7 @@ export default function ProductsPage() {
                   <button
                     key={cat.id}
                     onClick={() => setActiveFilter(cat.id)}
-                    className={`px-4 py-2 rounded-full text-sm font-medium transition-colors ${
+                    className={`px-3 sm:px-4 py-1.5 sm:py-2 rounded-full text-xs sm:text-sm font-medium transition-colors whitespace-nowrap ${
                       activeFilter === cat.id
                         ? "bg-primary text-primary-foreground"
                         : "bg-card text-muted-foreground hover:bg-muted"
@@ -325,7 +325,7 @@ export default function ProductsPage() {
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <p className="text-sm font-medium uppercase tracking-widest text-primary mb-4">
-                  Why Choose BharatSeeds
+                  Why Choose Vasudha Agri Biotech
                 </p>
                 <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground leading-tight text-balance">
                   Quality You Can Trust

@@ -94,10 +94,10 @@ export function Header() {
         <div className="flex h-16 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary">
-              <Leaf className="h-5 w-5 text-primary-foreground" />
+            <div className="flex h-9 w-9 sm:h-10 sm:w-10 items-center justify-center rounded-full bg-primary flex-shrink-0">
+              <Leaf className="h-4 w-4 sm:h-5 sm:w-5 text-primary-foreground" />
             </div>
-            <span className="font-serif text-xl font-bold text-foreground">
+            <span className="font-serif text-base sm:text-xl font-bold text-foreground truncate max-w-[140px] sm:max-w-none">
               Vasudha Agri Biotech
             </span>
           </Link>

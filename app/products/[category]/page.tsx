@@ -31,7 +31,7 @@ const categoryData: Record<
     icon: Wheat,
     description: "High-yielding wheat, rice, maize and sorghum seeds for maximum productivity.",
     longDescription:
-      "Our cereal seeds are developed through extensive research to deliver maximum yield in Indian agro-climatic conditions. From the wheat fields of Punjab to the rice paddies of West Bengal, BharatSeeds cereals are trusted by millions of farmers.",
+      "Our cereal seeds are developed through extensive research to deliver maximum yield in Indian agro-climatic conditions. From the wheat fields of Punjab to the rice paddies of West Bengal, Vasudha Agri Biotech cereals are trusted by farmers across India.",
     image: "/images/slide-harvest.jpg",
     products: [
       {
@@ -196,7 +196,7 @@ const categoryData: Record<
     icon: Flower2,
     description: "High oil-content mustard, groundnut, soybean, and sunflower seeds.",
     longDescription:
-      "Our oilseed varieties are bred for maximum oil content and yield. From the mustard fields of Rajasthan to the groundnut farms of Gujarat, BharatSeeds oilseeds deliver consistent performance.",
+      "Our oilseed varieties are bred for maximum oil content and yield. From the mustard fields of Rajasthan to the groundnut farms of Gujarat, Vasudha Agri Biotech oilseeds deliver consistent performance.",
     image: "/images/farmer-field.jpg",
     products: [
       {
@@ -242,7 +242,7 @@ const categoryData: Record<
     icon: TreeDeciduous,
     description: "BT Cotton and premium desi cotton varieties for textile industry.",
     longDescription:
-      "Our cotton seeds are developed for the demanding needs of Indian cotton farmers. With built-in pest resistance and high fiber quality, BharatSeeds cotton delivers excellent returns.",
+      "Our cotton seeds are developed for the demanding needs of Indian cotton farmers. With built-in pest resistance and high fiber quality, Vasudha Agri Biotech cotton delivers excellent returns.",
     image: "/images/hero-seeds.jpg",
     products: [
       {
@@ -292,7 +292,7 @@ export async function generateMetadata({
   if (!data) return { title: "Category Not Found" }
 
   return {
-    title: `${data.name} Seeds - BharatSeeds | Premium Quality Agricultural Seeds`,
+    title: `${data.name} Seeds - Vasudha Agri Biotech | Premium Quality Agricultural Seeds`,
     description: data.description,
   }
 }

@@ -5,9 +5,9 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 
 export const metadata = {
-  title: "About Us - BharatSeeds | Leading Seed Manufacturer in India",
+  title: "About Us - Vasudha Agri Biotech Pvt. Ltd. | Leading Seed Manufacturer in India",
   description:
-    "Learn about BharatSeeds - India's trusted seed manufacturing company since 1998. Our mission, vision, and commitment to Indian agriculture.",
+    "Learn about Vasudha Agri Biotech - India's trusted seed manufacturing company since 2015. Our mission, vision, and commitment to Indian agriculture.",
 }
 
 const features = [
@@ -20,42 +20,42 @@ const features = [
 ]
 
 const stats = [
-  { value: "25+", label: "Years of Excellence", icon: Award },
+  { value: "10+", label: "Years of Excellence", icon: Award },
   { value: "500+", label: "Seed Varieties", icon: Target },
-  { value: "10M+", label: "Farmers Served", icon: Users },
+  { value: "1M+", label: "Farmers Served", icon: Users },
   { value: "28", label: "States Covered", icon: Globe },
 ]
 
 const milestones = [
   {
-    year: "1998",
-    title: "Foundation",
-    description: "BharatSeeds was founded in Nashik, Maharashtra with a vision to revolutionize Indian agriculture.",
-  },
-  {
-    year: "2005",
-    title: "R&D Center",
-    description: "Established our first state-of-the-art research and development facility for seed technology.",
-  },
-  {
-    year: "2010",
-    title: "Pan-India Expansion",
-    description: "Expanded operations to all major agricultural states with a network of 5000+ dealers.",
-  },
-  {
     year: "2015",
-    title: "International Recognition",
-    description: "Received ISO 9001:2015 certification and multiple national awards for seed quality.",
+    title: "Foundation",
+    description: "Vasudha Agri Biotech was established with a vision to transform agriculture through high-quality seeds.",
   },
   {
-    year: "2020",
-    title: "Digital Transformation",
-    description: "Launched digital platforms for farmer support and online seed ordering across India.",
+    year: "2017",
+    title: "R&D Excellence",
+    description: "Established state-of-the-art research facilities led by qualified breeders and technocrats.",
   },
   {
-    year: "2024",
+    year: "2019",
+    title: "Product Expansion",
+    description: "Expanded product portfolio to include Field crops, Vegetable Seeds, Pulses, and more.",
+  },
+  {
+    year: "2021",
+    title: "Advanced Infrastructure",
+    description: "Upgraded to cutting-edge seed processing units ensuring superior physical and genetic purity.",
+  },
+  {
+    year: "2023",
+    title: "Pan-India Reach",
+    description: "Expanded distribution network across major agricultural states of India.",
+  },
+  {
+    year: "2025",
     title: "Sustainable Future",
-    description: "Committed to 100% sustainable packaging and climate-resilient seed development.",
+    description: "Committed to sustainable farming practices and climate-resilient seed development.",
   },
 ]
 
@@ -87,15 +87,15 @@ export default function AboutPage() {
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-3xl mx-auto">
               <p className="text-sm font-medium uppercase tracking-widest text-primary mb-4">
-                About BharatSeeds
+                About Vasudha Agri Biotech
               </p>
               <h1 className="font-serif text-4xl sm:text-5xl font-bold text-foreground leading-tight text-balance">
-                Nurturing Indian Agriculture Since 1998
+                Transforming Agriculture Since 2015
               </h1>
               <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-                From a small seed processing unit in Maharashtra to one of India&apos;s most
-                trusted seed companies, our journey has been driven by a singular mission -
-                empowering farmers for a prosperous future.
+                Since our establishment in 2015, we have been dedicated to transforming 
+                agriculture through the production of high-quality seeds, consistently 
+                focused on empowering farmers and supporting the agricultural sector.
               </p>
             </div>
           </div>
@@ -137,7 +137,7 @@ export default function AboutPage() {
                     />
                   </div>
                   <div className="bg-primary text-primary-foreground p-6 rounded-lg">
-                    <p className="font-serif text-3xl font-bold">25+</p>
+                    <p className="font-serif text-3xl font-bold">10+</p>
                     <p className="text-sm mt-1 opacity-90">
                       Years of Excellence in Seed Manufacturing
                     </p>
@@ -161,19 +161,21 @@ export default function AboutPage() {
                   Our Story
                 </p>
                 <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground leading-tight text-balance">
-                  A Legacy of Trust & Quality
+                  Director&apos;s Message
                 </h2>
                 <p className="mt-6 text-muted-foreground leading-relaxed">
-                  Founded with a vision to revolutionize Indian agriculture, BharatSeeds has
-                  grown from a small seed processing unit in Maharashtra to one of India&apos;s
-                  most trusted seed companies. Our commitment to quality and innovation has
-                  helped millions of farmers achieve better yields and sustainable
-                  livelihoods.
+                  Since our establishment in 2015, Vasudha Agri Biotech has been dedicated 
+                  to transforming agriculture through the production of high-quality Seeds. 
+                  With a diverse product portfolio that includes Field crops, Vegetable Seeds, 
+                  Pulse, and more, we have consistently focused on empowering farmers and 
+                  supporting the agricultural sector.
                 </p>
                 <p className="mt-4 text-muted-foreground leading-relaxed">
-                  With state-of-the-art research facilities and a dedicated team of
-                  agricultural scientists, we develop seeds that are perfectly suited to
-                  India&apos;s diverse climatic conditions and farming practices.
+                  Our state-of-the-art infrastructure, equipped with advanced seed processing 
+                  units and cutting-edge technologies, ensures the delivery of superior quality 
+                  seeds with excellent physical and genetic purity. Our strong R&D foundation, 
+                  led by qualified breeders and technocrats, enables us to develop high-yielding, 
+                  pest-resistant varieties that promote sustainable farming practices.
                 </p>
 
                 {/* Features Grid */}
@@ -200,12 +202,15 @@ export default function AboutPage() {
                     <Target className="h-6 w-6 text-primary" />
                   </div>
                   <h3 className="font-serif text-2xl font-bold text-foreground">Our Mission</h3>
-                  <p className="mt-4 text-muted-foreground leading-relaxed">
-                    To empower every Indian farmer with access to premium quality seeds,
-                    cutting-edge agricultural knowledge, and sustainable farming practices
-                    that ensure food security and economic prosperity for generations to
-                    come.
-                  </p>
+                  <div className="mt-4 text-muted-foreground leading-relaxed space-y-3">
+                    <p>To create an environment that focuses on &apos;Need based Research&apos; for the 
+                    development of friendly bio seeds of various crops and eco organic inputs 
+                    required by the farming community across India.</p>
+                    <p>Build &apos;state of the art&apos; high tech infrastructural facilities of 
+                    international standards to support the Research Mandate.</p>
+                    <p>Continual Human Resource Development to meet the challenges in the 
+                    agriculture sector with the concept of &quot;Parallel Wheel, Common Goal&quot;.</p>
+                  </div>
                 </CardContent>
               </Card>
               <Card className="bg-card">
@@ -215,9 +220,10 @@ export default function AboutPage() {
                   </div>
                   <h3 className="font-serif text-2xl font-bold text-foreground">Our Vision</h3>
                   <p className="mt-4 text-muted-foreground leading-relaxed">
-                    To be India&apos;s most trusted partner in agriculture by 2030, leading the
-                    transformation towards sustainable, climate-resilient farming while
-                    doubling farmer incomes and contributing to global food security.
+                    To become the market leader in the seed industry by catering to the 
+                    needs of Indian farmers. We remain committed to delivering mutual value 
+                    to our farmers, customers, and stakeholders while contributing to the 
+                    nation&apos;s agricultural growth.
                   </p>
                 </CardContent>
               </Card>
@@ -285,7 +291,7 @@ export default function AboutPage() {
                 Meet Our Team
               </h2>
               <p className="mt-4 text-muted-foreground">
-                Driven by passion and expertise, our leadership team guides BharatSeeds
+                Driven by passion and expertise, our leadership team guides Vasudha Agri Biotech
                 towards a sustainable agricultural future.
               </p>
             </div>

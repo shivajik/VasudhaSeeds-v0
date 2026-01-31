@@ -8,9 +8,9 @@ const dmSans = DM_Sans({ subsets: ["latin"], variable: '--font-dm-sans' });
 const playfair = Playfair_Display({ subsets: ["latin"], variable: '--font-playfair' });
 
 export const metadata: Metadata = {
-  title: 'BharatSeeds - Premium Quality Seeds for Indian Agriculture',
-  description: 'Leading seed manufacturing company in India providing high-quality agricultural seeds for farmers. Trusted by millions of farmers across India.',
-  keywords: 'seeds, agriculture, farming, India, crop seeds, vegetable seeds, hybrid seeds',
+  title: 'Vasudha Agri Biotech Pvt. Ltd. - Premium Quality Seeds for Indian Agriculture',
+  description: 'Leading seed manufacturing company in India since 2015. High-quality Field crops, Vegetable Seeds, Pulses with superior genetic purity. Empowering Indian farmers.',
+  keywords: 'seeds, agriculture, farming, India, crop seeds, vegetable seeds, hybrid seeds, Vasudha Agri Biotech',
     generator: 'v0.app'
 }
 

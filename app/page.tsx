@@ -81,7 +81,7 @@ export default function HomePage() {
                   />
                 </div>
                 <div className="bg-primary text-primary-foreground p-6 rounded-lg">
-                  <p className="font-serif text-3xl font-bold">25+</p>
+                  <p className="font-serif text-3xl font-bold">10+</p>
                   <p className="text-sm mt-1 opacity-90">
                     Years of Excellence in Seed Manufacturing
                   </p>
@@ -102,15 +102,15 @@ export default function HomePage() {
             {/* Content */}
             <div>
               <p className="text-sm font-medium uppercase tracking-widest text-primary mb-4">
-                About BharatSeeds
+                About Vasudha Agri Biotech
               </p>
               <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground leading-tight text-balance">
-                Nurturing Indian Agriculture Since 1998
+                Transforming Agriculture Since 2015
               </h2>
               <p className="mt-6 text-muted-foreground leading-relaxed">
-                Founded with a vision to revolutionize Indian agriculture, BharatSeeds has
-                grown from a small seed processing unit in Maharashtra to one of India&apos;s
-                most trusted seed companies.
+                With state-of-the-art infrastructure equipped with advanced seed processing 
+                units and cutting-edge technologies, we ensure the delivery of superior 
+                quality seeds with excellent physical and genetic purity.
               </p>
 
               {/* Features Grid */}
@@ -249,7 +249,7 @@ export default function HomePage() {
             Ready to Transform Your Farm?
           </h2>
           <p className="mt-4 text-lg text-primary-foreground/90 max-w-2xl mx-auto">
-            Join millions of farmers who have achieved better yields with BharatSeeds.
+            Join thousands of farmers who have achieved better yields with Vasudha Agri Biotech.
             Contact us today for personalized guidance.
           </p>
           <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">

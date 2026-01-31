@@ -44,11 +44,11 @@ export function Footer() {
               <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary">
                 <Leaf className="h-5 w-5 text-primary-foreground" />
               </div>
-              <span className="font-serif text-xl font-bold">BharatSeeds</span>
+              <span className="font-serif text-xl font-bold">Vasudha Agri Biotech</span>
             </Link>
             <p className="mt-4 text-card/70 leading-relaxed max-w-sm">
-              Empowering Indian farmers with premium quality seeds since 1998. Together, 
-              we grow India&apos;s future.
+              Transforming agriculture through high-quality seeds since 2015. Committed to 
+              empowering farmers and supporting India&apos;s agricultural growth.
             </p>
             <div className="mt-6 flex gap-4">
               {socialLinks.map((social) => {
@@ -113,7 +113,7 @@ export function Footer() {
         {/* Bottom Bar */}
         <div className="mt-12 pt-8 border-t border-card/10 flex flex-col sm:flex-row justify-between items-center gap-4">
           <p className="text-sm text-card/60">
-            © {new Date().getFullYear()} BharatSeeds Pvt. Ltd. All rights reserved.
+            © {new Date().getFullYear()} Vasudha Agri Biotech Pvt. Ltd. All rights reserved.
           </p>
           <div className="flex gap-6">
             <Link href="#" className="text-sm text-card/60 hover:text-primary transition-colors">

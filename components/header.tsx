@@ -98,7 +98,7 @@ export function Header() {
               <Leaf className="h-5 w-5 text-primary-foreground" />
             </div>
             <span className="font-serif text-xl font-bold text-foreground">
-              BharatSeeds
+              Vasudha Agri Biotech
             </span>
           </Link>
 

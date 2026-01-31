@@ -9,10 +9,10 @@ const slides = [
   {
     id: 1,
     image: "/images/hero-seeds.jpg",
-    subtitle: "Trusted by Millions of Farmers",
-    title: "Growing India's Future, One Seed at a Time",
+    subtitle: "Trusted by Indian Farmers Since 2015",
+    title: "Transforming Agriculture Through Quality Seeds",
     description:
-      "BharatSeeds is a leading seed manufacturing company committed to empowering Indian farmers with premium quality seeds that deliver exceptional yield and sustainable growth.",
+      "Vasudha Agri Biotech is dedicated to empowering farmers with high-quality seeds featuring excellent physical and genetic purity, delivering exceptional yield and sustainable growth.",
     cta: "Explore Our Seeds",
     ctaLink: "#products",
   },
@@ -20,9 +20,9 @@ const slides = [
     id: 2,
     image: "/images/slide-research.jpg",
     subtitle: "Innovation & Research",
-    title: "Advanced Seed Technology for Maximum Yield",
+    title: "State-of-the-Art Seed Technology",
     description:
-      "Our state-of-the-art research facilities develop hybrid and high-yielding seed varieties that are resistant to diseases and climate variations, ensuring better harvests.",
+      "Our advanced infrastructure with cutting-edge seed processing units develops high-yielding, pest-resistant varieties that address environmental concerns and promote sustainable farming.",
     cta: "Our Research",
     ctaLink: "#about",
   },
@@ -32,7 +32,7 @@ const slides = [
     subtitle: "Abundant Harvests",
     title: "From Our Labs to Your Fields",
     description:
-      "Join millions of satisfied farmers who have transformed their agricultural practices with our certified premium seeds, achieving up to 40% higher yields.",
+      "Our strong R&D foundation, led by qualified breeders and technocrats, ensures biotic and abiotic stress tolerance for better harvests across India.",
     cta: "Success Stories",
     ctaLink: "#services",
   },
@@ -42,16 +42,16 @@ const slides = [
     subtitle: "Complete Seed Solutions",
     title: "Quality Seeds for Every Crop",
     description:
-      "From cereals to vegetables, pulses to oilseeds - we offer a comprehensive range of 500+ seed varieties tailored to India's diverse agro-climatic conditions.",
+      "From field crops to vegetables, pulses and more - we offer a diverse product portfolio tailored to India's farming community needs.",
     cta: "View Products",
     ctaLink: "#products",
   },
 ]
 
 const stats = [
-  { value: "25+", label: "Years Experience" },
+  { value: "10+", label: "Years Experience" },
   { value: "500+", label: "Seed Varieties" },
-  { value: "10M+", label: "Farmers Served" },
+  { value: "1M+", label: "Farmers Served" },
 ]
 
 export function Hero() {

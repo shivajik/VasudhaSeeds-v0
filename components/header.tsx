@@ -1,0 +1,317 @@
+"use client"
+
+import Link from "next/link"
+import { useState } from "react"
+import Image from "next/image"
+import {
+  Menu,
+  X,
+  Leaf,
+  ChevronDown,
+  Wheat,
+  Sprout,
+  Flower2,
+  TreeDeciduous,
+  Apple,
+  Sparkles,
+  ArrowRight,
+} from "lucide-react"
+import { Button } from "@/components/ui/button"
+
+const productCategories = [
+  {
+    name: "Cereals",
+    href: "/products/cereals",
+    icon: Wheat,
+    description: "High-yielding wheat, rice, maize and more",
+    featured: [
+      { name: "Premium Wheat Seeds", href: "/products/cereals/wheat" },
+      { name: "Hybrid Rice Seeds", href: "/products/cereals/rice" },
+      { name: "Maize Seeds", href: "/products/cereals/maize" },
+    ],
+  },
+  {
+    name: "Pulses",
+    href: "/products/pulses",
+    icon: Sprout,
+    description: "Protein-rich moong, chana, urad dal seeds",
+    featured: [
+      { name: "Moong Dal Seeds", href: "/products/pulses/moong" },
+      { name: "Chana Seeds", href: "/products/pulses/chana" },
+      { name: "Urad Dal Seeds", href: "/products/pulses/urad" },
+    ],
+  },
+  {
+    name: "Vegetables",
+    href: "/products/vegetables",
+    icon: Apple,
+    description: "Fresh vegetable seeds for year-round harvest",
+    featured: [
+      { name: "Tomato Hybrid Seeds", href: "/products/vegetables/tomato" },
+      { name: "Chilli Seeds", href: "/products/vegetables/chilli" },
+      { name: "Brinjal Seeds", href: "/products/vegetables/brinjal" },
+    ],
+  },
+  {
+    name: "Oilseeds",
+    href: "/products/oilseeds",
+    icon: Flower2,
+    description: "High oil-content mustard, groundnut, soybean",
+    featured: [
+      { name: "Mustard Seeds", href: "/products/oilseeds/mustard" },
+      { name: "Groundnut Seeds", href: "/products/oilseeds/groundnut" },
+      { name: "Soybean Seeds", href: "/products/oilseeds/soybean" },
+    ],
+  },
+  {
+    name: "Cotton",
+    href: "/products/cotton",
+    icon: TreeDeciduous,
+    description: "BT cotton and premium cotton varieties",
+    featured: [
+      { name: "BT Cotton Seeds", href: "/products/cotton/bt-cotton" },
+      { name: "Desi Cotton Seeds", href: "/products/cotton/desi" },
+    ],
+  },
+]
+
+const navLinks = [
+  { href: "/", label: "Home" },
+  { href: "/about", label: "About Us" },
+  { href: "/products", label: "Products", hasMega: true },
+  { href: "/services", label: "Services" },
+  { href: "/contact", label: "Contact" },
+]
+
+export function Header() {
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false)
+  const [megaMenuOpen, setMegaMenuOpen] = useState(false)
+  const [mobileProductsOpen, setMobileProductsOpen] = useState(false)
+
+  return (
+    <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
+      <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div className="flex h-16 items-center justify-between">
+          {/* Logo */}
+          <Link href="/" className="flex items-center gap-2">
+            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary">
+              <Leaf className="h-5 w-5 text-primary-foreground" />
+            </div>
+            <span className="font-serif text-xl font-bold text-foreground">
+              BharatSeeds
+            </span>
+          </Link>
+
+          {/* Desktop Navigation */}
+          <div className="hidden lg:flex lg:items-center lg:gap-8">
+            {navLinks.map((link) =>
+              link.hasMega ? (
+                <div
+                  key={link.href}
+                  className="relative"
+                  onMouseEnter={() => setMegaMenuOpen(true)}
+                  onMouseLeave={() => setMegaMenuOpen(false)}
+                >
+                  <Link
+                    href={link.href}
+                    className="flex items-center gap-1 text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+                  >
+                    {link.label}
+                    <ChevronDown
+                      className={`h-4 w-4 transition-transform ${megaMenuOpen ? "rotate-180" : ""}`}
+                    />
+                  </Link>
+                </div>
+              ) : (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  className="text-sm font-medium text-muted-foreground transition-colors hover:text-primary"
+                >
+                  {link.label}
+                </Link>
+              )
+            )}
+          </div>
+
+          {/* Desktop CTA */}
+          <div className="hidden lg:block">
+            <Button asChild>
+              <Link href="/contact">Get Quote</Link>
+            </Button>
+          </div>
+
+          {/* Mobile Menu Button */}
+          <button
+            type="button"
+            className="lg:hidden p-2 text-foreground"
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+          >
+            <span className="sr-only">Open menu</span>
+            {mobileMenuOpen ? <X className="h-6 w-6" /> : <Menu className="h-6 w-6" />}
+          </button>
+        </div>
+
+        {/* Mega Menu */}
+        <div
+          className={`absolute left-0 right-0 top-full bg-background border-b border-border shadow-lg transition-all duration-300 ${
+            megaMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
+          }`}
+          onMouseEnter={() => setMegaMenuOpen(true)}
+          onMouseLeave={() => setMegaMenuOpen(false)}
+        >
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
+            <div className="grid grid-cols-12 gap-8">
+              {/* Categories */}
+              <div className="col-span-8">
+                <div className="flex items-center gap-2 mb-6">
+                  <Sparkles className="h-5 w-5 text-primary" />
+                  <h3 className="font-semibold text-foreground">Product Categories</h3>
+                </div>
+                <div className="grid grid-cols-3 gap-6">
+                  {productCategories.map((category) => {
+                    const IconComponent = category.icon
+                    return (
+                      <div key={category.name} className="group">
+                        <Link
+                          href={category.href}
+                          className="flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition-colors"
+                        >
+                          <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
+                            <IconComponent className="h-5 w-5 text-primary" />
+                          </div>
+                          <div>
+                            <p className="font-medium text-foreground group-hover:text-primary transition-colors">
+                              {category.name}
+                            </p>
+                            <p className="text-sm text-muted-foreground mt-0.5">
+                              {category.description}
+                            </p>
+                          </div>
+                        </Link>
+                        <ul className="mt-2 ml-16 space-y-1">
+                          {category.featured.map((item) => (
+                            <li key={item.name}>
+                              <Link
+                                href={item.href}
+                                className="text-sm text-muted-foreground hover:text-primary transition-colors"
+                              >
+                                {item.name}
+                              </Link>
+                            </li>
+                          ))}
+                        </ul>
+                      </div>
+                    )
+                  })}
+                </div>
+              </div>
+
+              {/* Featured Section */}
+              <div className="col-span-4 bg-muted rounded-xl p-6">
+                <div className="relative aspect-[4/3] rounded-lg overflow-hidden mb-4">
+                  <Image
+                    src="/images/seeds-variety.jpg"
+                    alt="Premium seed varieties"
+                    fill
+                    className="object-cover"
+                  />
+                </div>
+                <h4 className="font-serif text-lg font-semibold text-foreground">
+                  New Arrivals for Kharif Season
+                </h4>
+                <p className="text-sm text-muted-foreground mt-2">
+                  Discover our latest high-yielding hybrid varieties developed for Indian
+                  climate conditions.
+                </p>
+                <Button variant="link" className="p-0 h-auto mt-3 gap-1" asChild>
+                  <Link href="/products">
+                    Explore All Products
+                    <ArrowRight className="h-4 w-4" />
+                  </Link>
+                </Button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Mobile Navigation */}
+        {mobileMenuOpen && (
+          <div className="lg:hidden py-4 border-t border-border bg-background">
+            <div className="flex flex-col gap-2">
+              <Link
+                href="/"
+                className="px-3 py-2 text-base font-medium text-muted-foreground transition-colors hover:text-primary hover:bg-muted rounded-lg"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Home
+              </Link>
+              <Link
+                href="/about"
+                className="px-3 py-2 text-base font-medium text-muted-foreground transition-colors hover:text-primary hover:bg-muted rounded-lg"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                About Us
+              </Link>
+
+              {/* Mobile Products Accordion */}
+              <div>
+                <button
+                  type="button"
+                  onClick={() => setMobileProductsOpen(!mobileProductsOpen)}
+                  className="w-full flex items-center justify-between px-3 py-2 text-base font-medium text-muted-foreground hover:text-primary hover:bg-muted rounded-lg"
+                >
+                  Products
+                  <ChevronDown
+                    className={`h-4 w-4 transition-transform ${mobileProductsOpen ? "rotate-180" : ""}`}
+                  />
+                </button>
+                {mobileProductsOpen && (
+                  <div className="ml-4 mt-2 space-y-1 border-l-2 border-border pl-4">
+                    <Link
+                      href="/products"
+                      className="block px-3 py-2 text-sm font-medium text-primary hover:bg-muted rounded-lg"
+                      onClick={() => setMobileMenuOpen(false)}
+                    >
+                      All Products
+                    </Link>
+                    {productCategories.map((category) => (
+                      <Link
+                        key={category.name}
+                        href={category.href}
+                        className="block px-3 py-2 text-sm text-muted-foreground hover:text-primary hover:bg-muted rounded-lg"
+                        onClick={() => setMobileMenuOpen(false)}
+                      >
+                        {category.name}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              <Link
+                href="/services"
+                className="px-3 py-2 text-base font-medium text-muted-foreground transition-colors hover:text-primary hover:bg-muted rounded-lg"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Services
+              </Link>
+              <Link
+                href="/contact"
+                className="px-3 py-2 text-base font-medium text-muted-foreground transition-colors hover:text-primary hover:bg-muted rounded-lg"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Contact
+              </Link>
+              <Button className="mt-2 mx-3" asChild>
+                <Link href="/contact" onClick={() => setMobileMenuOpen(false)}>
+                  Get Quote
+                </Link>
+              </Button>
+            </div>
+          </div>
+        )}
+      </nav>
+    </header>
+  )
+}

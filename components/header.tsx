@@ -154,8 +154,8 @@ export function Header() {
 
         {/* Mega Menu */}
         <div
-          className={`absolute left-0 right-0 top-full bg-background border-b border-border shadow-lg transition-all duration-300 ${
-            megaMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
+          className={`absolute left-0 right-0 top-full bg-background border-b border-border shadow-xl transition-all duration-300 ${
+            megaMenuOpen ? "opacity-100 visible translate-y-0" : "opacity-0 invisible -translate-y-2"
           }`}
           onMouseEnter={() => setMegaMenuOpen(true)}
           onMouseLeave={() => setMegaMenuOpen(false)}
@@ -164,43 +164,62 @@ export function Header() {
             <div className="grid grid-cols-12 gap-8">
               {/* Categories */}
               <div className="col-span-8">
-                <div className="flex items-center gap-2 mb-6">
-                  <Sparkles className="h-5 w-5 text-primary" />
-                  <h3 className="font-semibold text-foreground">Product Categories</h3>
+                <div className="flex items-center justify-between mb-6">
+                  <div className="flex items-center gap-2">
+                    <Sparkles className="h-5 w-5 text-primary" />
+                    <h3 className="font-semibold text-foreground">Product Categories</h3>
+                  </div>
+                  <Link
+                    href="/products"
+                    className="text-sm font-medium text-primary hover:underline flex items-center gap-1"
+                  >
+                    View All
+                    <ArrowRight className="h-3 w-3" />
+                  </Link>
                 </div>
-                <div className="grid grid-cols-3 gap-6">
+                <div className="grid grid-cols-3 gap-4">
                   {productCategories.map((category) => {
                     const IconComponent = category.icon
                     return (
-                      <div key={category.name} className="group">
+                      <div
+                        key={category.name}
+                        className="group rounded-xl border border-border bg-card p-4 hover:border-primary/40 hover:shadow-md transition-all duration-200"
+                      >
                         <Link
                           href={category.href}
-                          className="flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition-colors"
+                          className="flex items-center gap-3 mb-3"
                         >
-                          <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
-                            <IconComponent className="h-5 w-5 text-primary" />
+                          <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary group-hover:scale-105 transition-all duration-200">
+                            <IconComponent className="h-5 w-5 text-primary group-hover:text-primary-foreground transition-colors" />
                           </div>
                           <div>
-                            <p className="font-medium text-foreground group-hover:text-primary transition-colors">
+                            <p className="font-semibold text-foreground group-hover:text-primary transition-colors">
                               {category.name}
                             </p>
-                            <p className="text-sm text-muted-foreground mt-0.5">
+                            <p className="text-xs text-muted-foreground line-clamp-1">
                               {category.description}
                             </p>
                           </div>
                         </Link>
-                        <ul className="mt-2 ml-16 space-y-1">
+                        <div className="space-y-1 pt-3 border-t border-border/60">
                           {category.featured.map((item) => (
-                            <li key={item.name}>
-                              <Link
-                                href={item.href}
-                                className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                              >
-                                {item.name}
-                              </Link>
-                            </li>
+                            <Link
+                              key={item.name}
+                              href={item.href}
+                              className="flex items-center gap-2 px-2 py-1.5 rounded-md text-sm text-muted-foreground hover:text-primary hover:bg-primary/5 transition-all group/item"
+                            >
+                              <span className="h-1.5 w-1.5 rounded-full bg-primary/40 group-hover/item:bg-primary group-hover/item:scale-125 transition-all" />
+                              {item.name}
+                            </Link>
                           ))}
-                        </ul>
+                        </div>
+                        <Link
+                          href={category.href}
+                          className="flex items-center gap-1 mt-3 pt-2 text-xs font-medium text-primary opacity-0 group-hover:opacity-100 transition-opacity"
+                        >
+                          View all {category.name.toLowerCase()}
+                          <ArrowRight className="h-3 w-3" />
+                        </Link>
                       </div>
                     )
                   })}
@@ -208,23 +227,29 @@ export function Header() {
               </div>
 
               {/* Featured Section */}
-              <div className="col-span-4 bg-muted rounded-xl p-6">
-                <div className="relative aspect-[4/3] rounded-lg overflow-hidden mb-4">
+              <div className="col-span-4 bg-gradient-to-br from-primary/5 to-accent/10 rounded-xl p-6 border border-primary/10">
+                <div className="relative aspect-[4/3] rounded-lg overflow-hidden mb-4 shadow-md">
                   <Image
                     src="/images/seeds-variety.jpg"
                     alt="Premium seed varieties"
                     fill
                     className="object-cover"
                   />
+                  <div className="absolute inset-0 bg-gradient-to-t from-foreground/60 to-transparent" />
+                  <div className="absolute bottom-3 left-3 right-3">
+                    <span className="inline-block px-2 py-1 bg-accent text-accent-foreground text-xs font-medium rounded-full">
+                      New Season
+                    </span>
+                  </div>
                 </div>
                 <h4 className="font-serif text-lg font-semibold text-foreground">
-                  New Arrivals for Kharif Season
+                  Kharif Season Specials
                 </h4>
-                <p className="text-sm text-muted-foreground mt-2">
+                <p className="text-sm text-muted-foreground mt-2 leading-relaxed">
                   Discover our latest high-yielding hybrid varieties developed for Indian
                   climate conditions.
                 </p>
-                <Button variant="link" className="p-0 h-auto mt-3 gap-1" asChild>
+                <Button className="w-full mt-4 gap-2" asChild>
                   <Link href="/products">
                     Explore All Products
                     <ArrowRight className="h-4 w-4" />

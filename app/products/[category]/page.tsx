@@ -607,6 +607,24 @@ const categoryData: Record<
       },
       {
         id: 11,
+        name: "ASHWINI-666 (Ridge Gourd)",
+        variety: "F1 Hybrid Ridge Gourd",
+        description: "High yielding F1 hybrid ridge gourd with long dark green fruits. Vigorous vine with excellent fruit quality.",
+        features: ["F1 Hybrid", "High Yield", "Dark Green Fruits"],
+        season: "Kharif/Summer",
+        duration: "45-50 days to first harvest",
+      },
+      {
+        id: 12,
+        name: "NANDINI-444 (Ridge Gourd)",
+        variety: "F1 Hybrid Ridge Gourd",
+        description: "Premium F1 hybrid ridge gourd with uniform green fruits. Strong vine with excellent fruit set and high yield potential.",
+        features: ["F1 Hybrid", "Uniform Fruits", "Strong Vine"],
+        season: "Kharif/Summer",
+        duration: "45-48 days to first harvest",
+      },
+      {
+        id: 13,
         name: "CHAKRAM-777 (Bhendi)",
         variety: "Improved Bhendi",
         description: "High yielding improved bhendi variety with dark green pods. Medium tall plant with good branching and excellent pod quality.",
@@ -615,7 +633,7 @@ const categoryData: Record<
         duration: "45-50 days to first harvest",
       },
       {
-        id: 12,
+        id: 14,
         name: "BHADRA-444 (Bhendi)",
         variety: "Improved Bhendi",
         description: "Premium improved bhendi with excellent pod quality. Medium plant with good branching and dark green tender pods.",

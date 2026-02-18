@@ -48,8 +48,8 @@ const categories = [
     name: "Vegetables",
     icon: Apple,
     image: "/images/slide-vegetables.jpg",
-    description: "Hybrid chilli, tomato, bhendi and bottle gourd seeds for commercial farming.",
-    productCount: 12,
+    description: "Hybrid chilli, tomato, bhendi, ridge gourd and bottle gourd seeds for commercial farming.",
+    productCount: 14,
   },
   {
     id: "pulses",

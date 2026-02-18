@@ -1,5 +1,5 @@
 import Image from "next/image"
-import { CheckCircle, Users, Award, Globe, Target } from "lucide-react"
+import { CheckCircle, Users, Award, Globe, Target, Quote } from "lucide-react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
@@ -114,6 +114,67 @@ export default function AboutPage() {
           </div>
         </section>
 
+        <section className="py-20 lg:py-28 bg-secondary">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center max-w-2xl mx-auto mb-12">
+              <p className="text-sm font-medium uppercase tracking-widest text-primary mb-4">
+                From the Directors
+              </p>
+              <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground leading-tight text-balance">
+                Director&apos;s Message
+              </h2>
+            </div>
+
+            <div className="max-w-4xl mx-auto">
+              <Card className="bg-card border-primary/20">
+                <CardContent className="p-8 sm:p-10">
+                  <Quote className="h-10 w-10 text-primary/20 mb-6" />
+                  <div className="space-y-4 text-muted-foreground leading-relaxed">
+                    <p>
+                      Since our establishment in 2015, our company has been dedicated to transforming
+                      agriculture through the production of high-quality seeds. With a diverse product
+                      portfolio that includes Field crops, Vegetable seeds, Pulses, and more, we have
+                      consistently focused on empowering farmers and supporting the agricultural sector.
+                    </p>
+                    <p>
+                      Our state-of-the-art infrastructure, equipped with advanced seed processing units
+                      and cutting-edge technologies, ensures the delivery of superior-quality seeds with
+                      excellent Physical and Genetic Purity. Our strong R&amp;D foundation, led by qualified
+                      breeders and technocrats, enables us to develop high-yielding, pest-resistant
+                      varieties that address environmental concerns and promote sustainable farming practices.
+                    </p>
+                    <p>
+                      We remain committed to delivering mutual value to our farmers, customers, and
+                      stakeholders while contributing to the nation&apos;s agricultural growth. Together,
+                      let us continue building a sustainable and prosperous future for the agriculture industry.
+                    </p>
+                    <p className="text-foreground font-medium italic">
+                      Greatly thankful to all our Farmers, Distributors, Dealers for tremendous support.
+                    </p>
+                  </div>
+
+                  <div className="mt-8 pt-6 border-t border-border flex flex-col sm:flex-row gap-6 sm:gap-12">
+                    <div>
+                      <p className="font-serif text-lg font-semibold text-foreground">
+                        B. Sreenivasula Reddy
+                      </p>
+                      <p className="text-sm text-primary font-medium">Managing Director</p>
+                      <p className="text-xs text-muted-foreground mt-0.5">Vasudha Agri Biotech Pvt. Ltd.</p>
+                    </div>
+                    <div>
+                      <p className="font-serif text-lg font-semibold text-foreground">
+                        B. Vasudha
+                      </p>
+                      <p className="text-sm text-primary font-medium">Director</p>
+                      <p className="text-xs text-muted-foreground mt-0.5">Vasudha Agri Biotech Pvt. Ltd.</p>
+                    </div>
+                  </div>
+                </CardContent>
+              </Card>
+            </div>
+          </div>
+        </section>
+
         <section className="py-20 lg:py-28 bg-background">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
@@ -178,7 +239,7 @@ export default function AboutPage() {
           </div>
         </section>
 
-        <section className="py-20 lg:py-28 bg-secondary">
+        <section className="py-20 lg:py-28 bg-background">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="grid md:grid-cols-2 gap-8">
               <Card className="bg-card">

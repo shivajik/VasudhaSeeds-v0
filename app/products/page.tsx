@@ -49,7 +49,7 @@ const categories = [
     icon: Apple,
     image: "/images/slide-vegetables.jpg",
     description: "Hybrid chilli, tomato, bhendi and bottle gourd seeds for commercial farming.",
-    productCount: 10,
+    productCount: 12,
   },
   {
     id: "pulses",
@@ -73,6 +73,22 @@ const categories = [
     icon: Wheat,
     image: "/images/slide-harvest.jpg",
     description: "Hybrid bajra seeds with high yield and excellent drought tolerance.",
+    productCount: 2,
+  },
+  {
+    id: "wheat",
+    name: "Wheat",
+    icon: Wheat,
+    image: "/images/slide-harvest.jpg",
+    description: "Improved wheat seeds with high yield and excellent grain quality.",
+    productCount: 2,
+  },
+  {
+    id: "mustard",
+    name: "Mustard",
+    icon: Sprout,
+    image: "/images/slide-harvest.jpg",
+    description: "Hybrid mustard seeds with high oil content and excellent yield.",
     productCount: 2,
   },
 ]

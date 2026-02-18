@@ -93,6 +93,26 @@ const productCategories = [
       { name: "MAHENDRA-444", href: "/products/bajra" },
     ],
   },
+  {
+    name: "Wheat",
+    href: "/products/wheat",
+    icon: Wheat,
+    description: "Improved wheat seeds with high yield potential",
+    featured: [
+      { name: "DHARANI-666", href: "/products/wheat" },
+      { name: "ARCHANA-555", href: "/products/wheat" },
+    ],
+  },
+  {
+    name: "Mustard",
+    href: "/products/mustard",
+    icon: Sprout,
+    description: "Hybrid mustard seeds with high oil content",
+    featured: [
+      { name: "RAKHI-555", href: "/products/mustard" },
+      { name: "VIKRAM-999", href: "/products/mustard" },
+    ],
+  },
 ]
 
 const navLinks = [

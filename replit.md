@@ -25,10 +25,12 @@ A Next.js website for Vasudha Agri Biotech Pvt. Ltd., a pioneering seed company 
 - Hybrid Maize (20 varieties with product packaging images)
 - Hybrid Paddy (11 varieties with product packaging images)
 - Research/Improved Paddy (15 varieties with product packaging images)
-- Vegetables - Chilli, Tomato, Bhendi, Bottle Gourd (10 varieties)
-- Pulses - Red Gram (2 varieties)
+- Vegetables - Chilli, Tomato, Bhendi, Bottle Gourd (12 varieties with product packaging images)
+- Pulses - Red Gram (2 varieties with product packaging images)
 - Sunflower (3 varieties with product packaging images)
 - Bajra / Pearl Millet (2 varieties with product packaging images)
+- Wheat (2 varieties with product packaging images)
+- Mustard (2 varieties with product packaging images)
 
 ## Running
 - Dev server: `npm run dev` (binds to 0.0.0.0:5000)

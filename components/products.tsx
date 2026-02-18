@@ -14,6 +14,8 @@ const categories = [
   { id: "pulses", label: "Pulses" },
   { id: "sunflower", label: "Sunflower" },
   { id: "bajra", label: "Bajra" },
+  { id: "wheat", label: "Wheat" },
+  { id: "mustard", label: "Mustard" },
 ]
 
 const products = [

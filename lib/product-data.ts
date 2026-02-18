@@ -37,6 +37,7 @@ export const allProductData: Record<string, CategoryDetail> = {
         features: ["High Yield", "Wider Adaptability", "Biotic Stress Tolerant"],
         season: "Kharif & Rabi",
         duration: "Kharif 110-115, Rabi 115-120 days",
+        image: "/images/products/guru-4062.jpg",
         specs: {
           "Crop Duration": "Kharif - 110 - 115 Days, Rabi - 115 - 120 Days",
           "Plant Height": "Tall Plants - 250 - 260 cm",
@@ -55,6 +56,7 @@ export const allProductData: Record<string, CategoryDetail> = {
         features: ["High Density Planting", "Erect Canopy", "Compact Filling"],
         season: "Kharif & Rabi",
         duration: "Kharif 110-115, Rabi 115-120 days",
+        image: "/images/products/askar-111.jpg",
         specs: {
           "Crop Duration": "Kharif - 110 - 115 Days, Rabi - 115 - 120 Days",
           "Plant Height": "Tall Plants - 254 - 264 cm",
@@ -73,6 +75,7 @@ export const allProductData: Record<string, CategoryDetail> = {
         features: ["Erect Canopy", "Compact Filling", "Wide Adaptability"],
         season: "Kharif & Rabi",
         duration: "Kharif 110-115, Rabi 120-125 days",
+        image: "/images/products/champion-555.jpg",
         specs: {
           "Crop Duration": "Kharif - 110 - 115 Days, Rabi - 120 - 125 Days",
           "Plant Height": "Tall Plants - 252 - 268 cm",
@@ -110,6 +113,7 @@ export const allProductData: Record<string, CategoryDetail> = {
         features: ["Moisture Stress Tolerant", "Stay Green", "Cattle Feed Suitable"],
         season: "Kharif & Rabi",
         duration: "Kharif 110-115, Rabi 115-120 days",
+        image: "/images/products/virat-777.jpg",
         specs: {
           "Crop Duration": "Kharif - 110 - 115 Days, Rabi - 115 - 120 Days",
           "Plant Height": "Tall Plants - 250 - 260 cm",
@@ -147,6 +151,7 @@ export const allProductData: Record<string, CategoryDetail> = {
         features: ["High Yield", "Erect Canopy", "Biotic Stress Tolerant"],
         season: "Kharif & Rabi",
         duration: "Kharif 110-115, Rabi 120-125 days",
+        image: "/images/products/power-4055.jpg",
         specs: {
           "Crop Duration": "Kharif - 110 - 115 Days, Rabi - 120 - 125 Days",
           "Plant Height": "Tall Plants - 250 - 260 cm",
@@ -184,6 +189,7 @@ export const allProductData: Record<string, CategoryDetail> = {
         features: ["Moisture Stress Tolerant", "Stay Green", "Cattle Feed"],
         season: "Kharif & Rabi",
         duration: "Kharif 110-115, Rabi 115-120 days",
+        image: "/images/products/bunny-999.jpg",
         specs: {
           "Crop Duration": "Kharif - 110 - 115 Days, Rabi - 115 - 120 Days",
           "Plant Height": "Tall Plants - 250 - 260 cm",
@@ -202,6 +208,7 @@ export const allProductData: Record<string, CategoryDetail> = {
         features: ["High Density Planting", "Erect Canopy", "Wide Adaptability"],
         season: "Kharif & Rabi",
         duration: "Kharif 110-115, Rabi 115-120 days",
+        image: "/images/products/garuda-666.jpg",
         specs: {
           "Crop Duration": "Kharif - 110 - 115 Days, Rabi - 115 - 120 Days",
           "Plant Height": "Tall Plants - 250 - 260 cm",
@@ -220,6 +227,7 @@ export const allProductData: Record<string, CategoryDetail> = {
         features: ["High Yield", "Erect Canopy", "Biotic Stress Tolerant"],
         season: "Kharif & Rabi",
         duration: "Kharif 110-115, Rabi 120-125 days",
+        image: "/images/products/aditya-369.jpg",
         specs: {
           "Crop Duration": "Kharif - 110 - 115 Days, Rabi - 120 - 125 Days",
           "Plant Height": "Tall Plants - 250 - 260 cm",
@@ -360,6 +368,25 @@ export const allProductData: Record<string, CategoryDetail> = {
           "Cob Shape & Shank": "Conico cylindrical cobs, Thin white shank with compact grain filling, cob placement medium to high",
           "Grain Colour & Texture": "Orange Semi flint grains",
           "Specific Features": "High-performance yield, strong plant structure with wider adaptability",
+          "Cultivation Period": "Suitable for Both Kharif and Rabi Season",
+        },
+      },
+      {
+        name: "LEADER-333",
+        slug: generateSlug("LEADER-333"),
+        variety: "Hybrid Maize",
+        description: "High yield potential hybrid corn seed with strong plant architecture. Excellent grain quality with compact filling and erect canopy for diverse conditions.",
+        features: ["High Yield", "Strong Architecture", "Compact Filling"],
+        season: "Kharif & Rabi",
+        duration: "Kharif 110-115, Rabi 115-120 days",
+        image: "/images/products/leader-333.jpg",
+        specs: {
+          "Crop Duration": "Kharif - 110 - 115 Days, Rabi - 115 - 120 Days",
+          "Plant Height": "Tall Plants - 250 - 260 cm",
+          "Stick & Foliage": "Medium Semi Erect, erect & green foliage",
+          "Cob Shape & Shank": "Conico cylindrical cobs, Thin white shank with compact grain filling, cob placement medium to high",
+          "Grain Colour & Texture": "Orange Semi flint grains",
+          "Specific Features": "High yield potential, strong plant architecture with compact grain filling",
           "Cultivation Period": "Suitable for Both Kharif and Rabi Season",
         },
       },

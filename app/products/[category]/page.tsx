@@ -196,6 +196,15 @@ const categoryData: Record<
         season: "Kharif & Rabi",
         duration: "Kharif 110-115, Rabi 115-120 days",
       },
+      {
+        id: 19,
+        name: "LEADER-333",
+        variety: "Hybrid Maize",
+        description: "High yield potential hybrid corn seed with strong plant architecture. Excellent grain quality with compact filling and erect canopy for diverse conditions.",
+        features: ["High Yield", "Strong Architecture", "Compact Filling"],
+        season: "Kharif & Rabi",
+        duration: "Kharif 110-115, Rabi 115-120 days",
+      },
     ],
   },
   "hybrid-paddy": {

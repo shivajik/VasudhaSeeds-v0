@@ -25,7 +25,7 @@ const categories = [
     icon: Wheat,
     image: "/images/slide-harvest.jpg",
     description: "High-yielding hybrid maize varieties for Kharif & Rabi seasons with wider adaptability.",
-    productCount: 12,
+    productCount: 20,
   },
   {
     id: "hybrid-paddy",
@@ -33,7 +33,7 @@ const categories = [
     icon: Sprout,
     image: "/images/seeds-variety.jpg",
     description: "Premium hybrid paddy seeds with high yield and disease tolerance.",
-    productCount: 7,
+    productCount: 11,
   },
   {
     id: "research-paddy",
@@ -41,7 +41,7 @@ const categories = [
     icon: Sprout,
     image: "/images/farmer-field.jpg",
     description: "Improved paddy varieties with superior grain quality and adaptability.",
-    productCount: 10,
+    productCount: 15,
   },
   {
     id: "vegetables",
@@ -66,6 +66,14 @@ const categories = [
     image: "/images/slide-harvest.jpg",
     description: "Hybrid sunflower seeds with high oil content and excellent yield.",
     productCount: 3,
+  },
+  {
+    id: "bajra",
+    name: "Bajra (Pearl Millet)",
+    icon: Wheat,
+    image: "/images/slide-harvest.jpg",
+    description: "Hybrid bajra seeds with high yield and excellent drought tolerance.",
+    productCount: 2,
   },
 ]
 

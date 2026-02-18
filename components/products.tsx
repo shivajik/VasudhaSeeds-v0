@@ -13,6 +13,7 @@ const categories = [
   { id: "vegetables", label: "Vegetables" },
   { id: "pulses", label: "Pulses" },
   { id: "sunflower", label: "Sunflower" },
+  { id: "bajra", label: "Bajra" },
 ]
 
 const products = [
@@ -95,6 +96,14 @@ const products = [
     description: "High oil content hybrid sunflower with excellent yield potential. Strong plant structure with wide adaptability and good disease tolerance.",
     icon: Sun,
     features: ["High Oil Content", "High Yield", "Wide Adaptability"],
+  },
+  {
+    id: 12,
+    name: "MAHI-999",
+    category: "bajra",
+    description: "High yielding hybrid bajra with excellent drought tolerance. Strong plant structure with good grain filling and wide adaptability.",
+    icon: Wheat,
+    features: ["High Yield", "Drought Tolerant", "Wide Adaptability"],
   },
 ]
 

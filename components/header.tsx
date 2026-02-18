@@ -83,6 +83,16 @@ const productCategories = [
       { name: "GLAMOUR-555", href: "/products/sunflower" },
     ],
   },
+  {
+    name: "Bajra (Pearl Millet)",
+    href: "/products/bajra",
+    icon: Wheat,
+    description: "Hybrid bajra seeds with drought tolerance",
+    featured: [
+      { name: "MAHI-999", href: "/products/bajra" },
+      { name: "MAHENDRA-444", href: "/products/bajra" },
+    ],
+  },
 ]
 
 const navLinks = [

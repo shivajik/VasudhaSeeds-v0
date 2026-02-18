@@ -16,9 +16,9 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 
 export const metadata = {
-  title: "Our Services - BharatSeeds | Comprehensive Farmer Support",
+  title: "Our Services - Vasudha Agri Seeds | Comprehensive Farmer Support",
   description:
-    "Discover BharatSeeds services - R&D, quality assurance, pan-India distribution, farmer training, 24/7 support, and sustainable farming solutions.",
+    "Discover Vasudha Agri Seeds services - R&D, quality assurance, distribution, farmer training, support, and sustainable farming solutions.",
 }
 
 const services = [
@@ -40,7 +40,7 @@ const services = [
     description:
       "Every seed batch undergoes rigorous testing for germination rate, purity, and disease resistance before reaching farmers.",
     features: [
-      "ISO 9001:2015 certified labs",
+      "Advanced quality testing labs",
       "Multi-stage quality testing",
       "Germination rate guarantee",
       "Certified seed processing",
@@ -48,14 +48,14 @@ const services = [
   },
   {
     icon: Truck,
-    title: "Pan-India Distribution",
+    title: "Distribution Network",
     description:
-      "Extensive dealer network and logistics infrastructure ensuring timely delivery to farmers in every corner of India.",
+      "Growing dealer network and logistics infrastructure ensuring timely delivery to farmers across multiple states in India.",
     features: [
-      "5000+ authorized dealers",
-      "Coverage in 28 states",
-      "Cold chain logistics",
-      "Real-time tracking",
+      "Authorized dealer network",
+      "Multi-state coverage",
+      "Efficient logistics",
+      "Timely delivery",
     ],
   },
   {
@@ -72,11 +72,11 @@ const services = [
   },
   {
     icon: Headphones,
-    title: "24/7 Support",
+    title: "Farmer Support",
     description:
       "Dedicated helpline and field support team to assist farmers throughout the crop cycle with expert guidance.",
     features: [
-      "Toll-free helpline",
+      "Helpline support",
       "WhatsApp support",
       "Field visit on request",
       "Multi-language support",
@@ -88,7 +88,7 @@ const services = [
     description:
       "Promoting eco-friendly practices and developing seeds that require fewer inputs while delivering higher yields.",
     features: [
-      "Organic seed varieties",
+      "Eco-friendly bio-organic inputs",
       "Water-efficient seeds",
       "Low-input agriculture",
       "Soil health programs",
@@ -100,7 +100,7 @@ const processSteps = [
   {
     step: "01",
     title: "Connect with Us",
-    description: "Reach out via our helpline, website, or visit your nearest BharatSeeds dealer.",
+    description: "Reach out via our helpline, website, or visit your nearest Vasudha Agri Seeds dealer.",
   },
   {
     step: "02",
@@ -124,7 +124,6 @@ export default function ServicesPage() {
     <>
       <Header />
       <main>
-        {/* Hero Section */}
         <section className="relative pt-32 pb-20 bg-secondary">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -148,7 +147,7 @@ export default function ServicesPage() {
                     </Link>
                   </Button>
                   <Button size="lg" variant="outline" asChild>
-                    <Link href="tel:+912532345678">Call Helpline</Link>
+                    <Link href="tel:+918466996092">Call Helpline</Link>
                   </Button>
                 </div>
               </div>
@@ -164,7 +163,6 @@ export default function ServicesPage() {
           </div>
         </section>
 
-        {/* Services Grid */}
         <section className="py-20 lg:py-28 bg-background">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-2xl mx-auto mb-16">
@@ -210,7 +208,6 @@ export default function ServicesPage() {
           </div>
         </section>
 
-        {/* Process Section */}
         <section className="py-20 lg:py-28 bg-secondary">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-2xl mx-auto mb-16">
@@ -218,7 +215,7 @@ export default function ServicesPage() {
                 How It Works
               </p>
               <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground leading-tight text-balance">
-                Your Journey with BharatSeeds
+                Your Journey with Vasudha Agri Seeds
               </h2>
             </div>
 
@@ -245,14 +242,13 @@ export default function ServicesPage() {
           </div>
         </section>
 
-        {/* CTA Section */}
         <section className="py-20 lg:py-28 bg-primary">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="font-serif text-3xl sm:text-4xl font-bold text-primary-foreground leading-tight text-balance">
               Ready to Transform Your Farm?
             </h2>
             <p className="mt-4 text-lg text-primary-foreground/90 max-w-2xl mx-auto">
-              Join millions of farmers who have achieved better yields with BharatSeeds.
+              Join thousands of farmers who have achieved better yields with Vasudha Agri Seeds.
               Contact us today for personalized guidance.
             </p>
             <div className="mt-8 flex flex-col sm:flex-row gap-4 justify-center">

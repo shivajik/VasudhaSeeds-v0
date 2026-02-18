@@ -6,12 +6,10 @@ import Image from "next/image"
 import {
   Menu,
   X,
-  Leaf,
   ChevronDown,
   Wheat,
   Sprout,
   Flower2,
-  TreeDeciduous,
   Apple,
   Sparkles,
   ArrowRight,
@@ -20,57 +18,57 @@ import { Button } from "@/components/ui/button"
 
 const productCategories = [
   {
-    name: "Cereals",
-    href: "/products/cereals",
+    name: "Hybrid Maize",
+    href: "/products/hybrid-maize",
     icon: Wheat,
-    description: "High-yielding wheat, rice, maize and more",
+    description: "High-yielding hybrid maize varieties for Kharif & Rabi",
     featured: [
-      { name: "Premium Wheat Seeds", href: "/products/cereals/wheat" },
-      { name: "Hybrid Rice Seeds", href: "/products/cereals/rice" },
-      { name: "Maize Seeds", href: "/products/cereals/maize" },
+      { name: "GURU-4062", href: "/products/hybrid-maize" },
+      { name: "CHAMPION-555", href: "/products/hybrid-maize" },
+      { name: "VIRAT-777", href: "/products/hybrid-maize" },
     ],
   },
   {
-    name: "Pulses",
-    href: "/products/pulses",
+    name: "Hybrid Paddy",
+    href: "/products/hybrid-paddy",
     icon: Sprout,
-    description: "Protein-rich moong, chana, urad dal seeds",
+    description: "Premium paddy seeds with high yield and disease tolerance",
     featured: [
-      { name: "Moong Dal Seeds", href: "/products/pulses/moong" },
-      { name: "Chana Seeds", href: "/products/pulses/chana" },
-      { name: "Urad Dal Seeds", href: "/products/pulses/urad" },
+      { name: "KAVERI-111", href: "/products/hybrid-paddy" },
+      { name: "GODAVARI-666", href: "/products/hybrid-paddy" },
+      { name: "ISHA-777", href: "/products/hybrid-paddy" },
+    ],
+  },
+  {
+    name: "Research Paddy",
+    href: "/products/research-paddy",
+    icon: Sprout,
+    description: "Improved paddy varieties with superior grain quality",
+    featured: [
+      { name: "VASUDHA-555", href: "/products/research-paddy" },
+      { name: "SRI KRISHNA-1122", href: "/products/research-paddy" },
+      { name: "MAHA LAKSHMI-2233", href: "/products/research-paddy" },
     ],
   },
   {
     name: "Vegetables",
     href: "/products/vegetables",
     icon: Apple,
-    description: "Fresh vegetable seeds for year-round harvest",
+    description: "Hybrid chilli, tomato, bhendi and bottle gourd seeds",
     featured: [
-      { name: "Tomato Hybrid Seeds", href: "/products/vegetables/tomato" },
-      { name: "Chilli Seeds", href: "/products/vegetables/chilli" },
-      { name: "Brinjal Seeds", href: "/products/vegetables/brinjal" },
+      { name: "VIJETHA-222 Chilli", href: "/products/vegetables" },
+      { name: "SARKAR-777 Tomato", href: "/products/vegetables" },
+      { name: "PAVANI-888 Bhendi", href: "/products/vegetables" },
     ],
   },
   {
-    name: "Oilseeds",
-    href: "/products/oilseeds",
+    name: "Pulses",
+    href: "/products/pulses",
     icon: Flower2,
-    description: "High oil-content mustard, groundnut, soybean",
+    description: "Red gram and pulse varieties for sustainable farming",
     featured: [
-      { name: "Mustard Seeds", href: "/products/oilseeds/mustard" },
-      { name: "Groundnut Seeds", href: "/products/oilseeds/groundnut" },
-      { name: "Soybean Seeds", href: "/products/oilseeds/soybean" },
-    ],
-  },
-  {
-    name: "Cotton",
-    href: "/products/cotton",
-    icon: TreeDeciduous,
-    description: "BT cotton and premium cotton varieties",
-    featured: [
-      { name: "BT Cotton Seeds", href: "/products/cotton/bt-cotton" },
-      { name: "Desi Cotton Seeds", href: "/products/cotton/desi" },
+      { name: "GANAPATHI-111", href: "/products/pulses" },
+      { name: "SHIVAJI-444", href: "/products/pulses" },
     ],
   },
 ]
@@ -92,17 +90,13 @@ export function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-background/95 backdrop-blur-sm border-b border-border">
       <nav className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <div className="flex h-10 w-10 items-center justify-center rounded-full bg-primary">
-              <Leaf className="h-5 w-5 text-primary-foreground" />
-            </div>
+            <Image src="/vasudha-logo.png" alt="Vasudha Agri Seeds" width={48} height={48} className="h-12 w-auto" />
             <span className="font-serif text-xl font-bold text-foreground">
-              BharatSeeds
+              Vasudha Agri Seeds
             </span>
           </Link>
 
-          {/* Desktop Navigation */}
           <div className="hidden lg:flex lg:items-center lg:gap-8">
             {navLinks.map((link) =>
               link.hasMega ? (
@@ -134,14 +128,12 @@ export function Header() {
             )}
           </div>
 
-          {/* Desktop CTA */}
           <div className="hidden lg:block">
             <Button asChild>
               <Link href="/contact">Get Quote</Link>
             </Button>
           </div>
 
-          {/* Mobile Menu Button */}
           <button
             type="button"
             className="lg:hidden p-2 text-foreground"
@@ -152,7 +144,6 @@ export function Header() {
           </button>
         </div>
 
-        {/* Mega Menu */}
         <div
           className={`absolute left-0 right-0 top-full bg-background border-b border-border shadow-lg transition-all duration-300 ${
             megaMenuOpen ? "opacity-100 visible" : "opacity-0 invisible"
@@ -162,7 +153,6 @@ export function Header() {
         >
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
             <div className="grid grid-cols-12 gap-8">
-              {/* Categories */}
               <div className="col-span-8">
                 <div className="flex items-center gap-2 mb-6">
                   <Sparkles className="h-5 w-5 text-primary" />
@@ -207,7 +197,6 @@ export function Header() {
                 </div>
               </div>
 
-              {/* Featured Section */}
               <div className="col-span-4 bg-muted rounded-xl p-6">
                 <div className="relative aspect-[4/3] rounded-lg overflow-hidden mb-4">
                   <Image
@@ -235,7 +224,6 @@ export function Header() {
           </div>
         </div>
 
-        {/* Mobile Navigation */}
         {mobileMenuOpen && (
           <div className="lg:hidden py-4 border-t border-border bg-background">
             <div className="flex flex-col gap-2">
@@ -254,7 +242,6 @@ export function Header() {
                 About Us
               </Link>
 
-              {/* Mobile Products Accordion */}
               <div>
                 <button
                   type="button"

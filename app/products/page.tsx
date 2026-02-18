@@ -11,7 +11,6 @@ import {
   Wheat,
   Sprout,
   Flower2,
-  TreeDeciduous,
   Apple,
   Search,
 } from "lucide-react"
@@ -20,94 +19,94 @@ import { Footer } from "@/components/footer"
 
 const categories = [
   {
-    id: "cereals",
-    name: "Cereals",
+    id: "hybrid-maize",
+    name: "Hybrid Maize",
     icon: Wheat,
     image: "/images/slide-harvest.jpg",
-    description: "High-yielding wheat, rice, maize and sorghum seeds for maximum productivity.",
-    productCount: 45,
+    description: "High-yielding hybrid maize varieties for Kharif & Rabi seasons with wider adaptability.",
+    productCount: 12,
   },
   {
-    id: "pulses",
-    name: "Pulses",
+    id: "hybrid-paddy",
+    name: "Hybrid Paddy",
     icon: Sprout,
     image: "/images/seeds-variety.jpg",
-    description: "Protein-rich moong, chana, urad, and arhar dal seeds for sustainable farming.",
-    productCount: 32,
+    description: "Premium hybrid paddy seeds with high yield and disease tolerance.",
+    productCount: 7,
+  },
+  {
+    id: "research-paddy",
+    name: "Research Paddy",
+    icon: Sprout,
+    image: "/images/farmer-field.jpg",
+    description: "Improved paddy varieties with superior grain quality and adaptability.",
+    productCount: 10,
   },
   {
     id: "vegetables",
     name: "Vegetables",
     icon: Apple,
     image: "/images/slide-vegetables.jpg",
-    description: "Premium hybrid vegetable seeds for year-round harvests.",
-    productCount: 120,
+    description: "Hybrid chilli, tomato, bhendi and bottle gourd seeds for commercial farming.",
+    productCount: 10,
   },
   {
-    id: "oilseeds",
-    name: "Oilseeds",
+    id: "pulses",
+    name: "Pulses",
     icon: Flower2,
-    image: "/images/farmer-field.jpg",
-    description: "High oil-content mustard, groundnut, soybean, and sunflower seeds.",
-    productCount: 28,
-  },
-  {
-    id: "cotton",
-    name: "Cotton",
-    icon: TreeDeciduous,
     image: "/images/hero-seeds.jpg",
-    description: "BT Cotton and premium desi cotton varieties for textile industry.",
-    productCount: 18,
+    description: "Red gram and pulse varieties for sustainable farming.",
+    productCount: 2,
   },
 ]
 
 const featuredProducts = [
   {
     id: 1,
-    name: "BharatGold Wheat",
-    category: "cereals",
-    description: "High-yielding wheat variety with 15% more yield than conventional seeds.",
-    features: ["Disease Resistant", "High Yield", "Premium Quality"],
+    name: "GURU-4062",
+    category: "hybrid-maize",
+    description: "High yield potential maize hybrid with wider adaptability. Tall plants 250-260cm, orange semi flint grains.",
+    features: ["High Yield", "Wider Adaptability", "Biotic Stress Tolerant"],
     badge: "Best Seller",
   },
   {
     id: 2,
-    name: "SuperRice-7",
-    category: "cereals",
-    description: "Aromatic basmati-type rice with excellent grain quality.",
-    features: ["Water Efficient", "Aromatic", "Early Maturity"],
-    badge: "New",
-  },
-  {
-    id: 3,
-    name: "TomatoMax Hybrid",
-    category: "vegetables",
-    description: "Determinate variety producing firm, red tomatoes ideal for transport.",
-    features: ["High Yield", "Long Shelf Life", "Virus Resistant"],
+    name: "KAVERI-111",
+    category: "hybrid-paddy",
+    description: "120-125 days duration with long bold slender grains. 380-400 grains per panicle. Tolerant to Blast & BPH.",
+    features: ["High Yield", "Blast Tolerant", "Long Slender"],
     badge: "Popular",
   },
   {
+    id: 3,
+    name: "SARKAR-777 Tomato",
+    category: "vegetables",
+    description: "Semi determinate, flat round type fruits weighing 80-100g. Very firm with good keeping quality.",
+    features: ["Heat Tolerant", "Very Firm", "Long Transport"],
+    badge: "New",
+  },
+  {
     id: 4,
-    name: "GreenMoong-101",
+    name: "GANAPATHI-111",
     category: "pulses",
-    description: "Short-duration variety perfect for summer cultivation.",
-    features: ["High Protein", "Short Duration", "Heat Tolerant"],
+    description: "Medium maturity red gram (140-150 days). Pods in clusters of 4-6 per cluster, 3-5 seeds per pod.",
+    features: ["Medium Maturity", "Cluster Pods", "Bold Seeds"],
     badge: null,
   },
   {
     id: 5,
-    name: "SarsonGold Mustard",
-    category: "oilseeds",
-    description: "High oil content variety with 42% oil yield.",
-    features: ["High Oil Content", "Drought Tolerant", "Early Maturity"],
+    name: "VIJETHA-222 Chilli",
+    category: "vegetables",
+    description: "Semi erect plant with 9-11cm smooth dark green to dark red fruits. High pungency, dual purpose hybrid.",
+    features: ["High Pungency", "Dual Purpose", "Export Quality"],
     badge: "Top Rated",
   },
   {
     id: 6,
-    name: "ChilliKing Hybrid",
-    category: "vegetables",
-    description: "Pungent variety with excellent color and uniform fruit size.",
-    features: ["High Pungency", "Uniform Size", "Disease Resistant"],
+    name: "CHAMPION-555",
+    category: "hybrid-maize",
+    description: "Conico cylindrical cobs with compact grain filling. Erect canopy suitable for Kharif & Rabi.",
+    features: ["Erect Canopy", "Compact Filling", "Wide Adaptability"],
     badge: null,
   },
 ]
@@ -133,7 +132,6 @@ export default function ProductsPage() {
     <>
       <Header />
       <main>
-        {/* Hero Section */}
         <section className="relative pt-32 pb-20 bg-secondary">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-3xl mx-auto">
@@ -144,11 +142,10 @@ export default function ProductsPage() {
                 Premium Quality Seeds for Every Crop
               </h1>
               <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-                Discover our comprehensive range of 500+ certified seeds developed through
+                Discover our comprehensive range of 50+ certified seeds developed through
                 years of research and field trials across India.
               </p>
 
-              {/* Search Bar */}
               <div className="mt-8 max-w-md mx-auto relative">
                 <Search className="absolute left-3 top-1/2 -translate-y-1/2 h-5 w-5 text-muted-foreground" />
                 <Input
@@ -163,7 +160,6 @@ export default function ProductsPage() {
           </div>
         </section>
 
-        {/* Categories Section */}
         <section className="py-20 lg:py-28 bg-background">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-2xl mx-auto mb-12">
@@ -215,7 +211,6 @@ export default function ProductsPage() {
           </div>
         </section>
 
-        {/* Featured Products */}
         <section className="py-20 lg:py-28 bg-secondary">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col sm:flex-row sm:items-end sm:justify-between gap-4 mb-12">
@@ -228,7 +223,6 @@ export default function ProductsPage() {
                 </p>
               </div>
 
-              {/* Filter Tabs */}
               <div className="flex flex-wrap gap-2">
                 <button
                   onClick={() => setActiveFilter("all")}
@@ -240,7 +234,7 @@ export default function ProductsPage() {
                 >
                   All
                 </button>
-                {categories.slice(0, 4).map((cat) => (
+                {categories.map((cat) => (
                   <button
                     key={cat.id}
                     onClick={() => setActiveFilter(cat.id)}
@@ -273,7 +267,7 @@ export default function ProductsPage() {
                         {product.name}
                       </h3>
                       <p className="text-sm text-primary capitalize mt-1">
-                        {product.category}
+                        {product.category.replace("-", " ")}
                       </p>
                       <p className="mt-3 text-sm text-muted-foreground leading-relaxed">
                         {product.description}
@@ -307,7 +301,6 @@ export default function ProductsPage() {
               </div>
             )}
 
-            {/* CTA */}
             <div className="mt-12 text-center">
               <p className="text-muted-foreground mb-4">
                 Can&apos;t find what you&apos;re looking for?
@@ -319,13 +312,12 @@ export default function ProductsPage() {
           </div>
         </section>
 
-        {/* Why Choose Section */}
         <section className="py-20 lg:py-28 bg-background">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-12 items-center">
               <div>
                 <p className="text-sm font-medium uppercase tracking-widest text-primary mb-4">
-                  Why Choose BharatSeeds
+                  Why Choose Vasudha Agri Seeds
                 </p>
                 <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground leading-tight text-balance">
                   Quality You Can Trust
@@ -336,8 +328,8 @@ export default function ProductsPage() {
                 </p>
                 <ul className="mt-8 space-y-4">
                   {[
-                    "98%+ germination rate guaranteed",
-                    "Certified by Government of India",
+                    "High germination rate guaranteed",
+                    "Quality tested seeds",
                     "Climate-adapted for Indian conditions",
                     "Technical support throughout crop cycle",
                   ].map((item) => (

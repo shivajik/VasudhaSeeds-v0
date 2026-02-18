@@ -24,17 +24,17 @@ const contactInfo = [
   {
     icon: Building2,
     title: "Head Office",
-    details: ["BharatSeeds Complex, Nashik Road", "Nashik, Maharashtra - 422101"],
+    details: ["Plot No.955/ Part, NJR & KLR Nagar", "Medchal, Hyderabad - 501401, Telangana"],
   },
   {
     icon: Phone,
     title: "Phone",
-    details: ["+91 253 2345678", "1800-123-4567 (Toll Free)"],
+    details: ["+91 8466996092"],
   },
   {
     icon: Mail,
     title: "Email",
-    details: ["info@bharatseeds.com", "sales@bharatseeds.com"],
+    details: ["vasudhaagribiotech@gmail.com"],
   },
   {
     icon: Clock,
@@ -47,19 +47,19 @@ const departments = [
   {
     icon: Users,
     title: "Sales Enquiry",
-    email: "sales@bharatseeds.com",
+    email: "vasudhaagribiotech@gmail.com",
     description: "For bulk orders and dealer partnerships",
   },
   {
     icon: Headphones,
     title: "Farmer Support",
-    email: "support@bharatseeds.com",
+    email: "vasudhaagribiotech@gmail.com",
     description: "For crop guidance and technical queries",
   },
   {
     icon: Building2,
     title: "Corporate Office",
-    email: "corporate@bharatseeds.com",
+    email: "vasudhaagribiotech@gmail.com",
     description: "For business and media inquiries",
   },
 ]
@@ -77,7 +77,6 @@ export default function ContactPage() {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault()
     setIsSubmitting(true)
-    // Simulate form submission
     await new Promise((resolve) => setTimeout(resolve, 1000))
     alert("Thank you for your inquiry. We will get back to you soon!")
     setFormData({ name: "", email: "", phone: "", subject: "", message: "" })
@@ -88,7 +87,6 @@ export default function ContactPage() {
     <>
       <Header />
       <main>
-        {/* Hero Section */}
         <section className="relative pt-32 pb-20 bg-secondary">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-3xl mx-auto">
@@ -106,7 +104,6 @@ export default function ContactPage() {
           </div>
         </section>
 
-        {/* Contact Info Cards */}
         <section className="py-12 bg-background">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="grid sm:grid-cols-2 lg:grid-cols-4 gap-6">
@@ -132,11 +129,9 @@ export default function ContactPage() {
           </div>
         </section>
 
-        {/* Main Contact Section */}
         <section className="py-20 lg:py-28 bg-background">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-5 gap-12">
-              {/* Contact Form */}
               <div className="lg:col-span-3">
                 <Card className="bg-card">
                   <CardContent className="p-6 lg:p-8">
@@ -195,7 +190,7 @@ export default function ContactPage() {
                           <Input
                             id="phone"
                             type="tel"
-                            placeholder="+91 98765 43210"
+                            placeholder="+91 84669 96092"
                             value={formData.phone}
                             onChange={(e) =>
                               setFormData({ ...formData, phone: e.target.value })
@@ -252,7 +247,6 @@ export default function ContactPage() {
                 </Card>
               </div>
 
-              {/* Departments */}
               <div className="lg:col-span-2 space-y-6">
                 <div>
                   <h3 className="font-serif text-xl font-semibold text-foreground mb-4">
@@ -286,16 +280,15 @@ export default function ContactPage() {
                   </div>
                 </div>
 
-                {/* Map Placeholder */}
                 <Card className="bg-card overflow-hidden">
                   <div className="aspect-[4/3] bg-muted flex items-center justify-center">
                     <div className="text-center p-6">
                       <MapPin className="h-12 w-12 text-primary mx-auto mb-4" />
                       <p className="font-semibold text-foreground">Visit Our Office</p>
                       <p className="text-sm text-muted-foreground mt-2">
-                        BharatSeeds Complex, Nashik Road
+                        Plot No.955/ Part, NJR & KLR Nagar
                         <br />
-                        Nashik, Maharashtra - 422101
+                        Medchal, Hyderabad - 501401, Telangana
                       </p>
                     </div>
                   </div>
@@ -305,15 +298,14 @@ export default function ContactPage() {
           </div>
         </section>
 
-        {/* Dealer Locator CTA */}
         <section className="py-16 bg-secondary">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 text-center">
             <h2 className="font-serif text-2xl sm:text-3xl font-bold text-foreground">
               Looking for a Dealer Near You?
             </h2>
             <p className="mt-4 text-muted-foreground max-w-2xl mx-auto">
-              Find your nearest authorized BharatSeeds dealer from our network of 5000+
-              dealers across India.
+              Find your nearest authorized Vasudha Agri Seeds dealer from our growing
+              network of dealers across India.
             </p>
             <Button size="lg" className="mt-6 gap-2">
               Find Dealer

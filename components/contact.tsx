@@ -13,17 +13,17 @@ const contactInfo = [
   {
     icon: MapPin,
     title: "Head Office",
-    details: ["BharatSeeds Complex, Nashik Road", "Nashik, Maharashtra - 422101"],
+    details: ["Plot No.955/ Part, NJR & KLR Nagar", "Medchal, Hyderabad - 501401, Telangana"],
   },
   {
     icon: Phone,
     title: "Phone",
-    details: ["+91 253 2345678", "+91 98765 43210 (Toll Free)"],
+    details: ["+91 8466996092"],
   },
   {
     icon: Mail,
     title: "Email",
-    details: ["info@bharatseeds.com", "sales@bharatseeds.com"],
+    details: ["vasudhaagribiotech@gmail.com"],
   },
   {
     icon: Clock,
@@ -42,7 +42,6 @@ export function Contact() {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault()
-    // Handle form submission
     console.log("[v0] Form submitted:", formData)
     alert("Thank you for your inquiry. We will get back to you soon!")
     setFormData({ name: "", email: "", phone: "", message: "" })
@@ -51,7 +50,6 @@ export function Contact() {
   return (
     <section id="contact" className="py-20 lg:py-28 bg-secondary">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* Header */}
         <div className="text-center max-w-2xl mx-auto">
           <p className="text-sm font-medium uppercase tracking-widest text-primary mb-4">
             Contact Us
@@ -66,7 +64,6 @@ export function Contact() {
         </div>
 
         <div className="mt-12 grid lg:grid-cols-5 gap-8">
-          {/* Contact Info */}
           <div className="lg:col-span-2 space-y-4">
             {contactInfo.map((info) => {
               const IconComponent = info.icon
@@ -90,7 +87,6 @@ export function Contact() {
             })}
           </div>
 
-          {/* Contact Form */}
           <Card className="lg:col-span-3 bg-card">
             <CardContent className="p-6 lg:p-8">
               <h3 className="font-serif text-xl font-semibold text-foreground mb-6">
@@ -131,7 +127,7 @@ export function Contact() {
                   <Input
                     id="phone"
                     type="tel"
-                    placeholder="+91 98765 43210"
+                    placeholder="+91 84669 96092"
                     value={formData.phone}
                     onChange={(e) => setFormData({ ...formData, phone: e.target.value })}
                   />

@@ -1,7 +1,7 @@
-# BharatSeeds - Seed Manufacturing Company Website
+# Vasudha Agri Seeds - Seed Manufacturing Company Website
 
 ## Overview
-A Next.js website for BharatSeeds, a seed manufacturing company. Built with React 19, Next.js 16, Tailwind CSS 4, and shadcn/ui components.
+A Next.js website for Vasudha Agri Biotech Pvt. Ltd., a pioneering seed company based in Hyderabad, Telangana. Established in 2015, specializing in Hybrid Maize, Hybrid Paddy, Research Paddy, Vegetables, and Pulses. Built with React 19, Next.js 16, Tailwind CSS 4, and shadcn/ui components.
 
 ## Project Architecture
 - **Framework**: Next.js 16 (App Router with Turbopack)
@@ -12,11 +12,19 @@ A Next.js website for BharatSeeds, a seed manufacturing company. Built with Reac
 
 ### Directory Structure
 - `app/` - Next.js App Router pages (home, about, contact, products, services)
+- `app/products/[category]/` - Dynamic product category pages (hybrid-maize, hybrid-paddy, research-paddy, vegetables, pulses)
 - `components/` - React components (header, footer, hero, etc.)
 - `components/ui/` - shadcn/ui primitives (button, card, input, textarea)
 - `lib/` - Utility functions
-- `public/` - Static assets and images
+- `public/` - Static assets, images, and company logo (vasudha-logo.png)
 - `styles/` - Global CSS
+
+## Product Categories
+- Hybrid Maize (12 varieties)
+- Hybrid Paddy (6 varieties)
+- Research/Improved Paddy (10 varieties)
+- Vegetables - Chilli, Tomato, Bhendi, Bottle Gourd (10 varieties)
+- Pulses - Red Gram (2 varieties)
 
 ## Running
 - Dev server: `npm run dev` (binds to 0.0.0.0:5000)
@@ -28,3 +36,8 @@ A Next.js website for BharatSeeds, a seed manufacturing company. Built with Reac
 - `tsconfig.json` - TypeScript config
 - `postcss.config.mjs` - PostCSS with Tailwind CSS plugin
 - `components.json` - shadcn/ui component configuration
+
+## Company Contact
+- Email: vasudhaagribiotech@gmail.com
+- Phone: +91 8466996092
+- Address: Plot No.955/Part, NJR & KLR Nagar, Medchal, Hyderabad - 501401, Telangana

@@ -3,11 +3,11 @@ import { CheckCircle } from "lucide-react"
 
 const features = [
   "Research-backed seed development",
-  "Strict quality control protocols",
+  "State-of-the-art R&D facilities",
   "Climate-resilient varieties",
-  "Farmer training programs",
-  "Pan-India distribution network",
-  "Affordable pricing for all farmers",
+  "Advanced seed processing units",
+  "Dedicated breeding programs",
+  "Quality seeds with high germination",
 ]
 
 export function About() {
@@ -15,7 +15,6 @@ export function About() {
     <section id="about" className="py-20 lg:py-28 bg-background">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-          {/* Image Grid */}
           <div className="grid grid-cols-2 gap-4">
             <div className="space-y-4">
               <div className="relative aspect-[4/5] rounded-lg overflow-hidden">
@@ -27,7 +26,7 @@ export function About() {
                 />
               </div>
               <div className="bg-primary text-primary-foreground p-6 rounded-lg">
-                <p className="font-serif text-3xl font-bold">25+</p>
+                <p className="font-serif text-3xl font-bold">10+</p>
                 <p className="text-sm mt-1 opacity-90">Years of Excellence in Seed Manufacturing</p>
               </div>
             </div>
@@ -43,27 +42,24 @@ export function About() {
             </div>
           </div>
 
-          {/* Content */}
           <div>
             <p className="text-sm font-medium uppercase tracking-widest text-primary mb-4">
-              About BharatSeeds
+              About Vasudha Agri Seeds
             </p>
             <h2 className="font-serif text-3xl sm:text-4xl font-bold text-foreground leading-tight text-balance">
-              Nurturing Indian Agriculture Since 1998
+              Enhancing Agricultural Productivity Since 2015
             </h2>
             <p className="mt-6 text-muted-foreground leading-relaxed">
-              Founded with a vision to revolutionize Indian agriculture, BharatSeeds has 
-              grown from a small seed processing unit in Maharashtra to one of India&apos;s most 
-              trusted seed companies. Our commitment to quality and innovation has helped 
-              millions of farmers achieve better yields and sustainable livelihoods.
+              Vasudha Agri Biotech Pvt. Ltd. is a pioneering seed company dedicated to 
+              enhancing agricultural productivity through innovative and quality seed solutions. 
+              Established in 2015 in Hyderabad, we have been at the forefront of developing 
+              hybrid and open-pollinated seeds.
             </p>
             <p className="mt-4 text-muted-foreground leading-relaxed">
-              With state-of-the-art research facilities and a dedicated team of agricultural 
-              scientists, we develop seeds that are perfectly suited to India&apos;s diverse 
-              climatic conditions and farming practices.
+              Our state-of-the-art R&D facilities, processing plants, and advanced laboratories 
+              produce seeds that meet global standards of purity, quality, and germination.
             </p>
 
-            {/* Features Grid */}
             <div className="mt-8 grid sm:grid-cols-2 gap-4">
               {features.map((feature) => (
                 <div key={feature} className="flex items-center gap-3">

@@ -3,64 +3,89 @@
 import { useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Wheat, Sprout, Flower2, TreeDeciduous } from "lucide-react"
+import { ArrowRight, Wheat, Sprout, Flower2, Apple } from "lucide-react"
 
 const categories = [
   { id: "all", label: "All Products" },
-  { id: "cereals", label: "Cereals" },
-  { id: "pulses", label: "Pulses" },
+  { id: "hybrid-maize", label: "Hybrid Maize" },
+  { id: "hybrid-paddy", label: "Hybrid Paddy" },
+  { id: "research-paddy", label: "Research Paddy" },
   { id: "vegetables", label: "Vegetables" },
-  { id: "oilseeds", label: "Oilseeds" },
+  { id: "pulses", label: "Pulses" },
 ]
 
 const products = [
   {
     id: 1,
-    name: "Premium Wheat Seeds",
-    category: "cereals",
-    description: "High-yielding wheat variety suitable for Rabi season across Northern India.",
+    name: "GURU-4062",
+    category: "hybrid-maize",
+    description: "High yield potential maize hybrid with wider adaptability. Tall plants 250-260cm, orange semi flint grains. Suitable for both Kharif & Rabi seasons.",
     icon: Wheat,
-    features: ["Disease Resistant", "High Yield", "Premium Quality"],
+    features: ["High Yield", "Wider Adaptability", "Biotic Stress Tolerant"],
   },
   {
     id: 2,
-    name: "Hybrid Rice Seeds",
-    category: "cereals",
-    description: "Aromatic rice variety with excellent grain quality and water efficiency.",
-    icon: Sprout,
-    features: ["Water Efficient", "Aromatic", "Early Maturity"],
+    name: "CHAMPION-555",
+    category: "hybrid-maize",
+    description: "Conico cylindrical cobs with compact grain filling. Medium to dark orange semi dent grains. Erect canopy suitable for Kharif & Rabi.",
+    icon: Wheat,
+    features: ["Erect Canopy", "Compact Filling", "Kharif & Rabi"],
   },
   {
     id: 3,
-    name: "Moong Dal Seeds",
-    category: "pulses",
-    description: "Short-duration variety perfect for summer cultivation with high protein content.",
-    icon: Flower2,
-    features: ["High Protein", "Short Duration", "Heat Tolerant"],
+    name: "KAVERI-111",
+    category: "hybrid-paddy",
+    description: "120-125 days duration with long bold slender grains. 380-400 grains per panicle. Tolerant to Blast & BPH. Suitable for boiled rice.",
+    icon: Sprout,
+    features: ["High Yield", "Blast Tolerant", "Long Slender"],
   },
   {
     id: 4,
-    name: "Tomato Hybrid Seeds",
-    category: "vegetables",
-    description: "Determinate variety producing firm, red tomatoes ideal for transport.",
-    icon: TreeDeciduous,
-    features: ["High Yield", "Long Shelf Life", "Virus Resistant"],
+    name: "GODAVARI-666",
+    category: "hybrid-paddy",
+    description: "130-135 days duration, long slender grains. 400-420 grains per panicle with strong tillers. Suitable for all soils.",
+    icon: Sprout,
+    features: ["All Soils", "Strong Tillers", "High Yield"],
   },
   {
     id: 5,
-    name: "Mustard Seeds",
-    category: "oilseeds",
-    description: "High oil content variety suitable for diverse soil conditions.",
-    icon: Flower2,
-    features: ["High Oil Content", "Drought Tolerant", "Early Maturity"],
+    name: "VIJETHA-222 Chilli",
+    category: "vegetables",
+    description: "Semi erect plant with 9-11cm smooth dark green to dark red fruits. High pungency, dual purpose hybrid with good colour retention.",
+    icon: Apple,
+    features: ["High Pungency", "Dual Purpose", "Export Quality"],
   },
   {
     id: 6,
-    name: "Chilli Hybrid Seeds",
+    name: "SARKAR-777 Tomato",
     category: "vegetables",
-    description: "Pungent variety with excellent color and uniform fruit size.",
+    description: "Semi determinate, flat round type fruits weighing 80-100g. Very firm with good keeping quality, suitable for long distance transport.",
+    icon: Apple,
+    features: ["Heat Tolerant", "Very Firm", "Long Transport"],
+  },
+  {
+    id: 7,
+    name: "VASUDHA-555",
+    category: "research-paddy",
+    description: "130-135 days duration with super fine grains. 400-450 grains per panicle. Suitable for both Kharif & Rabi and all soil types.",
     icon: Sprout,
-    features: ["High Pungency", "Uniform Size", "Disease Resistant"],
+    features: ["Super Fine Grains", "High Yield", "All Soils"],
+  },
+  {
+    id: 9,
+    name: "GANAPATHI-111",
+    category: "pulses",
+    description: "Medium maturity red gram (140-150 days). Pods in clusters of 4-6 per cluster, 3-5 seeds per pod. Medium bold ovoid shaped seeds.",
+    icon: Flower2,
+    features: ["Medium Maturity", "Cluster Pods", "Bold Seeds"],
+  },
+  {
+    id: 10,
+    name: "PAVANI-888 Bhendi",
+    category: "vegetables",
+    description: "Medium to tall plant with 12-14cm dark green pods. Resistance to YVMV and ELCV. High yielding with long shelf life.",
+    icon: Apple,
+    features: ["YVMV Resistant", "High Yield", "Long Shelf Life"],
   },
 ]
 
@@ -74,7 +99,6 @@ export function Products() {
   return (
     <section id="products" className="py-20 lg:py-28 bg-secondary">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-        {/* Header */}
         <div className="text-center max-w-2xl mx-auto">
           <p className="text-sm font-medium uppercase tracking-widest text-primary mb-4">
             Our Products
@@ -88,7 +112,6 @@ export function Products() {
           </p>
         </div>
 
-        {/* Category Filter */}
         <div className="mt-10 flex flex-wrap justify-center gap-2">
           {categories.map((category) => (
             <button
@@ -105,7 +128,6 @@ export function Products() {
           ))}
         </div>
 
-        {/* Products Grid */}
         <div className="mt-10 grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredProducts.map((product) => {
             const IconComponent = product.icon
@@ -141,7 +163,6 @@ export function Products() {
           })}
         </div>
 
-        {/* CTA */}
         <div className="mt-12 text-center">
           <Button size="lg" className="gap-2">
             View All Products

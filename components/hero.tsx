@@ -9,10 +9,10 @@ const slides = [
   {
     id: 1,
     image: "/images/hero-seeds.jpg",
-    subtitle: "Trusted by Millions of Farmers",
+    subtitle: "Trusted by Thousands of Farmers",
     title: "Growing India's Future, One Seed at a Time",
     description:
-      "BharatSeeds is a leading seed manufacturing company committed to empowering Indian farmers with premium quality seeds that deliver exceptional yield and sustainable growth.",
+      "Vasudha Agri Biotech Pvt. Ltd. is a pioneering seed company dedicated to enhancing agricultural productivity through innovative and quality seed solutions, empowering Indian farmers since 2015.",
     cta: "Explore Our Seeds",
     ctaLink: "#products",
   },
@@ -22,7 +22,7 @@ const slides = [
     subtitle: "Innovation & Research",
     title: "Advanced Seed Technology for Maximum Yield",
     description:
-      "Our state-of-the-art research facilities develop hybrid and high-yielding seed varieties that are resistant to diseases and climate variations, ensuring better harvests.",
+      "Our state-of-the-art R&D facilities, processing plants, and advanced laboratories produce seeds meeting global standards of purity, quality, and germination.",
     cta: "Our Research",
     ctaLink: "#about",
   },
@@ -32,7 +32,7 @@ const slides = [
     subtitle: "Abundant Harvests",
     title: "From Our Labs to Your Fields",
     description:
-      "Join millions of satisfied farmers who have transformed their agricultural practices with our certified premium seeds, achieving up to 40% higher yields.",
+      "Join thousands of satisfied farmers who trust Vasudha Agri Seeds for high-yielding, pest-resistant varieties suited to diverse climates.",
     cta: "Success Stories",
     ctaLink: "#services",
   },
@@ -42,16 +42,16 @@ const slides = [
     subtitle: "Complete Seed Solutions",
     title: "Quality Seeds for Every Crop",
     description:
-      "From cereals to vegetables, pulses to oilseeds - we offer a comprehensive range of 500+ seed varieties tailored to India's diverse agro-climatic conditions.",
+      "Specializing in Hybrid Maize, Hybrid Paddy, Research Paddy, Vegetables, and Pulses - we offer a comprehensive range of 50+ seed varieties tailored to India's diverse agro-climatic conditions.",
     cta: "View Products",
     ctaLink: "#products",
   },
 ]
 
 const stats = [
-  { value: "25+", label: "Years Experience" },
-  { value: "500+", label: "Seed Varieties" },
-  { value: "10M+", label: "Farmers Served" },
+  { value: "10+", label: "Years Experience" },
+  { value: "50+", label: "Seed Varieties" },
+  { value: "1000+", label: "Farmers Served" },
 ]
 
 export function Hero() {
@@ -87,7 +87,6 @@ export function Hero() {
 
   return (
     <section id="home" className="relative min-h-screen overflow-hidden">
-      {/* Slides */}
       {slides.map((slide, index) => (
         <div
           key={slide.id}
@@ -97,7 +96,6 @@ export function Hero() {
               : "opacity-0 z-0"
           }`}
         >
-          {/* Background Image with Ken Burns Effect */}
           <div
             className={`absolute inset-0 transition-transform duration-[8000ms] ease-out ${
               index === currentSlide ? "scale-110" : "scale-100"
@@ -113,11 +111,9 @@ export function Hero() {
           </div>
           <div className="absolute inset-0 bg-gradient-to-r from-foreground/80 via-foreground/50 to-transparent" />
 
-          {/* Content with Staggered Animations */}
           <div className="relative z-10 flex items-center min-h-screen">
             <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 pt-20 w-full">
               <div className="max-w-2xl">
-                {/* Subtitle */}
                 <p
                   className={`text-sm font-medium uppercase tracking-widest text-accent mb-4 transition-all duration-500 ${
                     index === currentSlide
@@ -130,7 +126,6 @@ export function Hero() {
                   {slide.subtitle}
                 </p>
 
-                {/* Title */}
                 <h1
                   className={`font-serif text-4xl sm:text-5xl lg:text-6xl font-bold text-card leading-tight text-balance transition-all duration-500 ${
                     index === currentSlide
@@ -143,7 +138,6 @@ export function Hero() {
                   {slide.title}
                 </h1>
 
-                {/* Description */}
                 <p
                   className={`mt-6 text-lg text-card/90 leading-relaxed max-w-xl transition-all duration-500 ${
                     index === currentSlide
@@ -156,7 +150,6 @@ export function Hero() {
                   {slide.description}
                 </p>
 
-                {/* CTA Buttons */}
                 <div
                   className={`mt-8 flex flex-col sm:flex-row gap-4 transition-all duration-500 ${
                     index === currentSlide
@@ -180,7 +173,6 @@ export function Hero() {
                   </Button>
                 </div>
 
-                {/* Stats */}
                 <div
                   className={`mt-12 grid grid-cols-3 gap-8 border-t border-card/20 pt-8 transition-all duration-500 ${
                     index === currentSlide
@@ -203,7 +195,6 @@ export function Hero() {
         </div>
       ))}
 
-      {/* Navigation Arrows */}
       <button
         onClick={prevSlide}
         className="absolute left-4 sm:left-8 top-1/2 -translate-y-1/2 z-20 p-3 rounded-full bg-card/10 backdrop-blur-sm border border-card/20 text-card hover:bg-card/20 transition-all duration-300 hover:scale-110"
@@ -219,9 +210,7 @@ export function Hero() {
         <ChevronRight className="h-6 w-6" />
       </button>
 
-      {/* Bottom Controls */}
       <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex items-center gap-6">
-        {/* Play/Pause Button */}
         <button
           onClick={() => setIsPlaying(!isPlaying)}
           className="p-2 rounded-full bg-card/10 backdrop-blur-sm border border-card/20 text-card hover:bg-card/20 transition-all duration-300"
@@ -234,7 +223,6 @@ export function Hero() {
           )}
         </button>
 
-        {/* Slide Indicators with Progress */}
         <div className="flex items-center gap-3">
           {slides.map((_, index) => (
             <button
@@ -259,7 +247,6 @@ export function Hero() {
           ))}
         </div>
 
-        {/* Slide Counter */}
         <div className="text-card text-sm font-medium">
           <span className="text-accent">{String(currentSlide + 1).padStart(2, "0")}</span>
           <span className="mx-1">/</span>
@@ -267,7 +254,6 @@ export function Hero() {
         </div>
       </div>
 
-      {/* Side Progress Dots (Desktop) */}
       <div className="hidden lg:flex absolute right-8 top-1/2 -translate-y-1/2 z-20 flex-col gap-3">
         {slides.map((_, index) => (
           <button

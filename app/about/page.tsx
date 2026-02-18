@@ -5,75 +5,70 @@ import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 
 export const metadata = {
-  title: "About Us - BharatSeeds | Leading Seed Manufacturer in India",
+  title: "About Us - Vasudha Agri Seeds | Leading Seed Manufacturer in India",
   description:
-    "Learn about BharatSeeds - India's trusted seed manufacturing company since 1998. Our mission, vision, and commitment to Indian agriculture.",
+    "Learn about Vasudha Agri Biotech Pvt. Ltd. - India's trusted seed manufacturing company since 2015. Our mission, vision, and commitment to Indian agriculture.",
 }
 
 const features = [
   "Research-backed seed development",
-  "Strict quality control protocols",
+  "State-of-the-art R&D facilities",
   "Climate-resilient varieties",
-  "Farmer training programs",
-  "Pan-India distribution network",
-  "Affordable pricing for all farmers",
+  "Advanced seed processing units",
+  "Dedicated breeding programs",
+  "Quality seeds with high germination",
 ]
 
 const stats = [
-  { value: "25+", label: "Years of Excellence", icon: Award },
-  { value: "500+", label: "Seed Varieties", icon: Target },
-  { value: "10M+", label: "Farmers Served", icon: Users },
-  { value: "28", label: "States Covered", icon: Globe },
+  { value: "10+", label: "Years of Excellence", icon: Award },
+  { value: "50+", label: "Seed Varieties", icon: Target },
+  { value: "1000+", label: "Farmers Served", icon: Users },
+  { value: "10+", label: "States Covered", icon: Globe },
 ]
 
 const milestones = [
   {
-    year: "1998",
-    title: "Foundation",
-    description: "BharatSeeds was founded in Nashik, Maharashtra with a vision to revolutionize Indian agriculture.",
-  },
-  {
-    year: "2005",
-    title: "R&D Center",
-    description: "Established our first state-of-the-art research and development facility for seed technology.",
-  },
-  {
-    year: "2010",
-    title: "Pan-India Expansion",
-    description: "Expanded operations to all major agricultural states with a network of 5000+ dealers.",
-  },
-  {
     year: "2015",
-    title: "International Recognition",
-    description: "Received ISO 9001:2015 certification and multiple national awards for seed quality.",
+    title: "Foundation",
+    description: "Vasudha Agri Biotech Pvt. Ltd. was established in Hyderabad, Telangana with a vision to become the market leader in the seed industry.",
   },
   {
-    year: "2020",
-    title: "Digital Transformation",
-    description: "Launched digital platforms for farmer support and online seed ordering across India.",
+    year: "2017",
+    title: "R&D Expansion",
+    description: "Established state-of-the-art R&D facilities and advanced laboratories for seed breeding and quality testing.",
   },
   {
-    year: "2024",
-    title: "Sustainable Future",
-    description: "Committed to 100% sustainable packaging and climate-resilient seed development.",
+    year: "2019",
+    title: "Product Portfolio Growth",
+    description: "Expanded product portfolio to include Hybrid Maize, Paddy, Vegetables, and Pulses with multiple high-performing varieties.",
+  },
+  {
+    year: "2021",
+    title: "Processing Plant",
+    description: "Set up modern seed processing units and packaging facilities at our factory in Medchal, Hyderabad.",
+  },
+  {
+    year: "2023",
+    title: "Market Expansion",
+    description: "Expanded dealer and distributor network across multiple states in India.",
+  },
+  {
+    year: "2025",
+    title: "Innovation & Growth",
+    description: "Continuing to develop high-yielding, pest-resistant varieties that address environmental concerns and promote sustainable farming.",
   },
 ]
 
 const team = [
   {
-    name: "Dr. Rajesh Sharma",
-    role: "Founder & Chairman",
+    name: "B. Sreenivasula Reddy",
+    role: "Managing Director",
     image: "/images/farmer-field.jpg",
   },
   {
-    name: "Priya Patel",
-    role: "Managing Director",
+    name: "B. Vasudha",
+    role: "Director",
     image: "/images/quality-lab.jpg",
-  },
-  {
-    name: "Dr. Anil Kumar",
-    role: "Head of R&D",
-    image: "/images/seeds-variety.jpg",
   },
 ]
 
@@ -82,26 +77,24 @@ export default function AboutPage() {
     <>
       <Header />
       <main>
-        {/* Hero Section */}
         <section className="relative pt-32 pb-20 bg-secondary">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-3xl mx-auto">
               <p className="text-sm font-medium uppercase tracking-widest text-primary mb-4">
-                About BharatSeeds
+                About Vasudha Agri Seeds
               </p>
               <h1 className="font-serif text-4xl sm:text-5xl font-bold text-foreground leading-tight text-balance">
-                Nurturing Indian Agriculture Since 1998
+                Enhancing Agricultural Productivity Since 2015
               </h1>
               <p className="mt-6 text-lg text-muted-foreground leading-relaxed">
-                From a small seed processing unit in Maharashtra to one of India&apos;s most
-                trusted seed companies, our journey has been driven by a singular mission -
-                empowering farmers for a prosperous future.
+                Vasudha Agri Biotech Pvt. Ltd. is a pioneering seed company dedicated to
+                enhancing agricultural productivity through innovative and quality seed
+                solutions, empowering Indian farmers from Hyderabad, Telangana.
               </p>
             </div>
           </div>
         </section>
 
-        {/* Stats Section */}
         <section className="py-12 bg-primary">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="grid grid-cols-2 lg:grid-cols-4 gap-8">
@@ -121,11 +114,9 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Our Story */}
         <section className="py-20 lg:py-28 bg-background">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="grid lg:grid-cols-2 gap-12 lg:gap-16 items-center">
-              {/* Image Grid */}
               <div className="grid grid-cols-2 gap-4">
                 <div className="space-y-4">
                   <div className="relative aspect-[4/5] rounded-lg overflow-hidden">
@@ -137,7 +128,7 @@ export default function AboutPage() {
                     />
                   </div>
                   <div className="bg-primary text-primary-foreground p-6 rounded-lg">
-                    <p className="font-serif text-3xl font-bold">25+</p>
+                    <p className="font-serif text-3xl font-bold">10+</p>
                     <p className="text-sm mt-1 opacity-90">
                       Years of Excellence in Seed Manufacturing
                     </p>
@@ -155,7 +146,6 @@ export default function AboutPage() {
                 </div>
               </div>
 
-              {/* Content */}
               <div>
                 <p className="text-sm font-medium uppercase tracking-widest text-primary mb-4">
                   Our Story
@@ -164,19 +154,17 @@ export default function AboutPage() {
                   A Legacy of Trust & Quality
                 </h2>
                 <p className="mt-6 text-muted-foreground leading-relaxed">
-                  Founded with a vision to revolutionize Indian agriculture, BharatSeeds has
-                  grown from a small seed processing unit in Maharashtra to one of India&apos;s
-                  most trusted seed companies. Our commitment to quality and innovation has
-                  helped millions of farmers achieve better yields and sustainable
-                  livelihoods.
+                  Vasudha Agri Biotech Pvt. Ltd. is a pioneering seed company dedicated to
+                  enhancing agricultural productivity through innovative and quality seed
+                  solutions. Established in 2015 in Hyderabad, Telangana, we have been at the
+                  forefront of developing hybrid and open-pollinated seeds for Indian farmers.
                 </p>
                 <p className="mt-4 text-muted-foreground leading-relaxed">
-                  With state-of-the-art research facilities and a dedicated team of
-                  agricultural scientists, we develop seeds that are perfectly suited to
-                  India&apos;s diverse climatic conditions and farming practices.
+                  Our state-of-the-art R&D facilities, processing plants, and advanced
+                  laboratories produce seeds that meet global standards of purity, quality,
+                  and germination.
                 </p>
 
-                {/* Features Grid */}
                 <div className="mt-8 grid sm:grid-cols-2 gap-4">
                   {features.map((feature) => (
                     <div key={feature} className="flex items-center gap-3">
@@ -190,7 +178,6 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Mission & Vision */}
         <section className="py-20 lg:py-28 bg-secondary">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="grid md:grid-cols-2 gap-8">
@@ -201,10 +188,10 @@ export default function AboutPage() {
                   </div>
                   <h3 className="font-serif text-2xl font-bold text-foreground">Our Mission</h3>
                   <p className="mt-4 text-muted-foreground leading-relaxed">
-                    To empower every Indian farmer with access to premium quality seeds,
-                    cutting-edge agricultural knowledge, and sustainable farming practices
-                    that ensure food security and economic prosperity for generations to
-                    come.
+                    To create an environment that focuses on &apos;Need based Research&apos; for
+                    the development of seeds of various crops and eco-friendly bio-organic
+                    inputs, empowering Indian farmers with premium quality seeds and
+                    sustainable farming practices.
                   </p>
                 </CardContent>
               </Card>
@@ -215,9 +202,9 @@ export default function AboutPage() {
                   </div>
                   <h3 className="font-serif text-2xl font-bold text-foreground">Our Vision</h3>
                   <p className="mt-4 text-muted-foreground leading-relaxed">
-                    To be India&apos;s most trusted partner in agriculture by 2030, leading the
-                    transformation towards sustainable, climate-resilient farming while
-                    doubling farmer incomes and contributing to global food security.
+                    To become the market leader in the seed industry by catering the needs
+                    of Indian farmers, leading the transformation towards sustainable,
+                    climate-resilient farming while contributing to food security.
                   </p>
                 </CardContent>
               </Card>
@@ -225,7 +212,6 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Timeline */}
         <section className="py-20 lg:py-28 bg-background">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-2xl mx-auto mb-16">
@@ -238,7 +224,6 @@ export default function AboutPage() {
             </div>
 
             <div className="relative">
-              {/* Timeline Line */}
               <div className="hidden md:block absolute left-1/2 top-0 bottom-0 w-0.5 bg-border -translate-x-1/2" />
 
               <div className="space-y-8 md:space-y-12">
@@ -264,7 +249,6 @@ export default function AboutPage() {
                         </CardContent>
                       </Card>
                     </div>
-                    {/* Dot */}
                     <div className="hidden md:flex absolute left-1/2 -translate-x-1/2 h-4 w-4 rounded-full bg-primary border-4 border-background" />
                     <div className="md:w-1/2" />
                   </div>
@@ -274,7 +258,6 @@ export default function AboutPage() {
           </div>
         </section>
 
-        {/* Leadership Team */}
         <section className="py-20 lg:py-28 bg-secondary">
           <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
             <div className="text-center max-w-2xl mx-auto mb-16">
@@ -285,12 +268,12 @@ export default function AboutPage() {
                 Meet Our Team
               </h2>
               <p className="mt-4 text-muted-foreground">
-                Driven by passion and expertise, our leadership team guides BharatSeeds
-                towards a sustainable agricultural future.
+                Driven by passion and expertise, our leadership team guides Vasudha Agri
+                Biotech towards a sustainable agricultural future.
               </p>
             </div>
 
-            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div className="grid sm:grid-cols-2 gap-8 max-w-2xl mx-auto">
               {team.map((member) => (
                 <Card key={member.name} className="bg-card overflow-hidden">
                   <div className="relative aspect-[4/3]">

@@ -572,8 +572,8 @@ export default async function CategoryPage({
                       className="mt-4 p-0 h-auto text-primary gap-1 group-hover:gap-2 transition-all"
                       asChild
                     >
-                      <Link href="/contact">
-                        Request Quote
+                      <Link href={`/products/${category}/${product.name.toLowerCase().replace(/[^a-z0-9]+/g, "-").replace(/(^-|-$)/g, "")}`}>
+                        More Info
                         <ArrowRight className="h-4 w-4" />
                       </Link>
                     </Button>

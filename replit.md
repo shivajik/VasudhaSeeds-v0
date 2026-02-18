@@ -13,6 +13,8 @@ A Next.js website for Vasudha Agri Biotech Pvt. Ltd., a pioneering seed company 
 ### Directory Structure
 - `app/` - Next.js App Router pages (home, about, contact, products, services)
 - `app/products/[category]/` - Dynamic product category pages (hybrid-maize, hybrid-paddy, research-paddy, vegetables, pulses)
+- `app/products/[category]/[product]/` - Individual product detail pages with specifications table
+- `lib/product-data.ts` - Centralized product data with detailed specs for all 40 varieties
 - `components/` - React components (header, footer, hero, etc.)
 - `components/ui/` - shadcn/ui primitives (button, card, input, textarea)
 - `lib/` - Utility functions

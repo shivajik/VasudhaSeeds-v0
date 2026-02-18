@@ -12,6 +12,7 @@ import {
   Sprout,
   Flower2,
   Apple,
+  Sun,
   Search,
 } from "lucide-react"
 import { Header } from "@/components/header"
@@ -57,6 +58,14 @@ const categories = [
     image: "/images/hero-seeds.jpg",
     description: "Red gram and pulse varieties for sustainable farming.",
     productCount: 2,
+  },
+  {
+    id: "sunflower",
+    name: "Sunflower",
+    icon: Sun,
+    image: "/images/slide-harvest.jpg",
+    description: "Hybrid sunflower seeds with high oil content and excellent yield.",
+    productCount: 3,
   },
 ]
 

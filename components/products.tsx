@@ -3,7 +3,7 @@
 import { useState } from "react"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, Wheat, Sprout, Flower2, Apple } from "lucide-react"
+import { ArrowRight, Wheat, Sprout, Flower2, Apple, Sun } from "lucide-react"
 
 const categories = [
   { id: "all", label: "All Products" },
@@ -12,6 +12,7 @@ const categories = [
   { id: "research-paddy", label: "Research Paddy" },
   { id: "vegetables", label: "Vegetables" },
   { id: "pulses", label: "Pulses" },
+  { id: "sunflower", label: "Sunflower" },
 ]
 
 const products = [
@@ -86,6 +87,14 @@ const products = [
     description: "Medium to tall plant with 12-14cm dark green pods. Resistance to YVMV and ELCV. High yielding with long shelf life.",
     icon: Apple,
     features: ["YVMV Resistant", "High Yield", "Long Shelf Life"],
+  },
+  {
+    id: 11,
+    name: "BINDAAS-444",
+    category: "sunflower",
+    description: "High oil content hybrid sunflower with excellent yield potential. Strong plant structure with wide adaptability and good disease tolerance.",
+    icon: Sun,
+    features: ["High Oil Content", "High Yield", "Wide Adaptability"],
   },
 ]
 

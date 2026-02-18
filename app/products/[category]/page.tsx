@@ -3,7 +3,7 @@ import Link from "next/link"
 import { notFound } from "next/navigation"
 import { Card, CardContent } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
-import { ArrowRight, ArrowLeft, Wheat, Sprout, Flower2, Apple } from "lucide-react"
+import { ArrowRight, ArrowLeft, Wheat, Sprout, Flower2, Apple, Sun } from "lucide-react"
 import { Header } from "@/components/header"
 import { Footer } from "@/components/footer"
 
@@ -422,6 +422,70 @@ const categoryData: Record<
         features: ["Medium Bold", "All Soils", "High Yield"],
         season: "Kharif",
         duration: "140-145 days",
+      },
+      {
+        id: 11,
+        name: "VIKASH-222",
+        variety: "Improved Paddy",
+        description: "High yield improved paddy variety with excellent grain quality. Medium plant height with strong tillers and good disease tolerance.",
+        features: ["High Yield", "Strong Tillers", "All Soils"],
+        season: "Kharif",
+        duration: "125-130 days",
+      },
+      {
+        id: 12,
+        name: "LAKSHMAN-6655",
+        variety: "Improved Paddy",
+        description: "Premium improved paddy variety with strong plant architecture. Excellent grain quality with good disease tolerance and high yield potential.",
+        features: ["Premium Quality", "High Yield", "Disease Tolerant"],
+        season: "Kharif",
+        duration: "130-135 days",
+      },
+      {
+        id: 13,
+        name: "LOTUS-999",
+        variety: "Improved Paddy",
+        description: "High performance improved paddy with excellent adaptability. Medium plant height with good tillering and disease tolerance.",
+        features: ["High Performance", "Good Tillering", "All Soils"],
+        season: "Kharif",
+        duration: "120-125 days",
+      },
+    ],
+  },
+  sunflower: {
+    name: "Sunflower",
+    icon: Sun,
+    description: "Hybrid sunflower seeds with high oil content and excellent yield potential.",
+    longDescription:
+      "Vasudha Agri Seeds hybrid sunflower varieties are developed for high oil content, excellent yield potential, and wide adaptability. Our sunflower hybrids feature strong plant architecture with good disease tolerance suitable for diverse growing conditions.",
+    image: "/images/slide-harvest.jpg",
+    products: [
+      {
+        id: 1,
+        name: "BINDAAS-444",
+        variety: "Hybrid Sunflower",
+        description: "High oil content hybrid sunflower with excellent yield potential. Strong plant structure with wide adaptability and good disease tolerance.",
+        features: ["High Oil Content", "High Yield", "Wide Adaptability"],
+        season: "Kharif & Rabi",
+        duration: "90-95 days",
+      },
+      {
+        id: 2,
+        name: "DON-888",
+        variety: "Hybrid Sunflower",
+        description: "Premium hybrid sunflower seed with high oil content and strong plant architecture. Excellent grain filling with wide adaptability.",
+        features: ["Premium Quality", "High Oil Content", "Strong Architecture"],
+        season: "Kharif & Rabi",
+        duration: "90-95 days",
+      },
+      {
+        id: 3,
+        name: "GLAMOUR-555",
+        variety: "Hybrid Sunflower",
+        description: "High performance hybrid sunflower with excellent adaptability. Strong plant structure with high oil content and good disease resistance.",
+        features: ["High Performance", "High Oil Content", "Disease Resistant"],
+        season: "Kharif & Rabi",
+        duration: "88-93 days",
       },
     ],
   },

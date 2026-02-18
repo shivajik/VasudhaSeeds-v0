@@ -11,6 +11,7 @@ import {
   Sprout,
   Flower2,
   Apple,
+  Sun,
   Sparkles,
   ArrowRight,
 } from "lucide-react"
@@ -69,6 +70,17 @@ const productCategories = [
     featured: [
       { name: "GANAPATHI-111", href: "/products/pulses" },
       { name: "SHIVAJI-444", href: "/products/pulses" },
+    ],
+  },
+  {
+    name: "Sunflower",
+    href: "/products/sunflower",
+    icon: Sun,
+    description: "Hybrid sunflower seeds with high oil content",
+    featured: [
+      { name: "BINDAAS-444", href: "/products/sunflower" },
+      { name: "DON-888", href: "/products/sunflower" },
+      { name: "GLAMOUR-555", href: "/products/sunflower" },
     ],
   },
 ]

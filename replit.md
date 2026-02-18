@@ -1,7 +1,7 @@
 # Vasudha Agri Seeds - Seed Manufacturing Company Website
 
 ## Overview
-A Next.js website for Vasudha Agri Biotech Pvt. Ltd., a pioneering seed company based in Hyderabad, Telangana. Established in 2015, specializing in Hybrid Maize, Hybrid Paddy, Research Paddy, Vegetables, and Pulses. Built with React 19, Next.js 16, Tailwind CSS 4, and shadcn/ui components.
+A Next.js website for Vasudha Agri Biotech Pvt. Ltd., a pioneering seed company based in Hyderabad, Telangana. Established in 2015, specializing in Hybrid Maize, Hybrid Paddy, Research Paddy, Vegetables, Pulses, and Sunflower. Built with React 19, Next.js 16, Tailwind CSS 4, and shadcn/ui components.
 
 ## Project Architecture
 - **Framework**: Next.js 16 (App Router with Turbopack)
@@ -12,9 +12,9 @@ A Next.js website for Vasudha Agri Biotech Pvt. Ltd., a pioneering seed company 
 
 ### Directory Structure
 - `app/` - Next.js App Router pages (home, about, contact, products, services)
-- `app/products/[category]/` - Dynamic product category pages (hybrid-maize, hybrid-paddy, research-paddy, vegetables, pulses)
+- `app/products/[category]/` - Dynamic product category pages (hybrid-maize, hybrid-paddy, research-paddy, vegetables, pulses, sunflower)
 - `app/products/[category]/[product]/` - Individual product detail pages with specifications table
-- `lib/product-data.ts` - Centralized product data with detailed specs for all 40 varieties
+- `lib/product-data.ts` - Centralized product data with detailed specs for all varieties
 - `components/` - React components (header, footer, hero, etc.)
 - `components/ui/` - shadcn/ui primitives (button, card, input, textarea)
 - `lib/` - Utility functions
@@ -22,11 +22,12 @@ A Next.js website for Vasudha Agri Biotech Pvt. Ltd., a pioneering seed company 
 - `styles/` - Global CSS
 
 ## Product Categories
-- Hybrid Maize (18 varieties, 10 with product packaging images)
-- Hybrid Paddy (6 varieties)
-- Research/Improved Paddy (10 varieties)
+- Hybrid Maize (20 varieties with product packaging images)
+- Hybrid Paddy (11 varieties with product packaging images)
+- Research/Improved Paddy (13 varieties, most with product packaging images)
 - Vegetables - Chilli, Tomato, Bhendi, Bottle Gourd (10 varieties)
 - Pulses - Red Gram (2 varieties)
+- Sunflower (3 varieties with product packaging images)
 
 ## Running
 - Dev server: `npm run dev` (binds to 0.0.0.0:5000)

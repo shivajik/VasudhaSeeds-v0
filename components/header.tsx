@@ -18,101 +18,15 @@ import {
 import { Button } from "@/components/ui/button"
 
 const productCategories = [
-  {
-    name: "Hybrid Maize",
-    href: "/products/hybrid-maize",
-    icon: Wheat,
-    description: "High-yielding hybrid maize varieties for Kharif & Rabi",
-    featured: [
-      { name: "GURU-4062", href: "/products/hybrid-maize" },
-      { name: "CHAMPION-555", href: "/products/hybrid-maize" },
-      { name: "VIRAT-777", href: "/products/hybrid-maize" },
-    ],
-  },
-  {
-    name: "Hybrid Paddy",
-    href: "/products/hybrid-paddy",
-    icon: Sprout,
-    description: "Premium paddy seeds with high yield and disease tolerance",
-    featured: [
-      { name: "KAVERI-111", href: "/products/hybrid-paddy" },
-      { name: "GODAVARI-666", href: "/products/hybrid-paddy" },
-      { name: "ISHA-777", href: "/products/hybrid-paddy" },
-    ],
-  },
-  {
-    name: "Research Paddy",
-    href: "/products/research-paddy",
-    icon: Sprout,
-    description: "Improved paddy varieties with superior grain quality",
-    featured: [
-      { name: "VASUDHA-555", href: "/products/research-paddy" },
-      { name: "SRI KRISHNA-1122", href: "/products/research-paddy" },
-      { name: "MAHA LAKSHMI-2233", href: "/products/research-paddy" },
-    ],
-  },
-  {
-    name: "Vegetables",
-    href: "/products/vegetables",
-    icon: Apple,
-    description: "Hybrid chilli, tomato, bhendi and bottle gourd seeds",
-    featured: [
-      { name: "VIJETHA-222 Chilli", href: "/products/vegetables" },
-      { name: "SARKAR-777 Tomato", href: "/products/vegetables" },
-      { name: "PAVANI-888 Bhendi", href: "/products/vegetables" },
-    ],
-  },
-  {
-    name: "Pulses",
-    href: "/products/pulses",
-    icon: Flower2,
-    description: "Red gram and pulse varieties for sustainable farming",
-    featured: [
-      { name: "GANAPATHI-111", href: "/products/pulses" },
-      { name: "SHIVAJI-444", href: "/products/pulses" },
-    ],
-  },
-  {
-    name: "Sunflower",
-    href: "/products/sunflower",
-    icon: Sun,
-    description: "Hybrid sunflower seeds with high oil content",
-    featured: [
-      { name: "BINDAAS-444", href: "/products/sunflower" },
-      { name: "DON-888", href: "/products/sunflower" },
-      { name: "GLAMOUR-555", href: "/products/sunflower" },
-    ],
-  },
-  {
-    name: "Bajra (Pearl Millet)",
-    href: "/products/bajra",
-    icon: Wheat,
-    description: "Hybrid bajra seeds with drought tolerance",
-    featured: [
-      { name: "MAHI-999", href: "/products/bajra" },
-      { name: "MAHENDRA-444", href: "/products/bajra" },
-    ],
-  },
-  {
-    name: "Wheat",
-    href: "/products/wheat",
-    icon: Wheat,
-    description: "Improved wheat seeds with high yield potential",
-    featured: [
-      { name: "DHARANI-666", href: "/products/wheat" },
-      { name: "ARCHANA-555", href: "/products/wheat" },
-    ],
-  },
-  {
-    name: "Mustard",
-    href: "/products/mustard",
-    icon: Sprout,
-    description: "Hybrid mustard seeds with high oil content",
-    featured: [
-      { name: "RAKHI-555", href: "/products/mustard" },
-      { name: "VIKRAM-999", href: "/products/mustard" },
-    ],
-  },
+  { name: "Hybrid Maize", href: "/products/hybrid-maize", icon: Wheat, count: "20 varieties" },
+  { name: "Hybrid Paddy", href: "/products/hybrid-paddy", icon: Sprout, count: "11 varieties" },
+  { name: "Research Paddy", href: "/products/research-paddy", icon: Sprout, count: "15 varieties" },
+  { name: "Vegetables", href: "/products/vegetables", icon: Apple, count: "14 varieties" },
+  { name: "Pulses", href: "/products/pulses", icon: Flower2, count: "2 varieties" },
+  { name: "Sunflower", href: "/products/sunflower", icon: Sun, count: "3 varieties" },
+  { name: "Bajra", href: "/products/bajra", icon: Wheat, count: "2 varieties" },
+  { name: "Wheat", href: "/products/wheat", icon: Wheat, count: "2 varieties" },
+  { name: "Mustard", href: "/products/mustard", icon: Sprout, count: "2 varieties" },
 ]
 
 const navLinks = [
@@ -193,54 +107,47 @@ export function Header() {
           onMouseEnter={() => setMegaMenuOpen(true)}
           onMouseLeave={() => setMegaMenuOpen(false)}
         >
-          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-8">
-            <div className="grid grid-cols-12 gap-8">
+          <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-5">
+            <div className="grid grid-cols-12 gap-6">
               <div className="col-span-8">
-                <div className="flex items-center gap-2 mb-6">
-                  <Sparkles className="h-5 w-5 text-primary" />
-                  <h3 className="font-semibold text-foreground">Product Categories</h3>
+                <div className="flex items-center gap-2 mb-4">
+                  <Sparkles className="h-4 w-4 text-primary" />
+                  <h3 className="text-sm font-semibold text-foreground">Product Categories</h3>
                 </div>
-                <div className="grid grid-cols-3 gap-6">
+                <div className="grid grid-cols-3 gap-1">
                   {productCategories.map((category) => {
                     const IconComponent = category.icon
                     return (
-                      <div key={category.name} className="group">
-                        <Link
-                          href={category.href}
-                          className="flex items-start gap-3 p-3 rounded-lg hover:bg-muted transition-colors"
-                        >
-                          <div className="h-10 w-10 rounded-lg bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
-                            <IconComponent className="h-5 w-5 text-primary" />
-                          </div>
-                          <div>
-                            <p className="font-medium text-foreground group-hover:text-primary transition-colors">
-                              {category.name}
-                            </p>
-                            <p className="text-sm text-muted-foreground mt-0.5">
-                              {category.description}
-                            </p>
-                          </div>
-                        </Link>
-                        <ul className="mt-2 ml-16 space-y-1">
-                          {category.featured.map((item) => (
-                            <li key={item.name}>
-                              <Link
-                                href={item.href}
-                                className="text-sm text-muted-foreground hover:text-primary transition-colors"
-                              >
-                                {item.name}
-                              </Link>
-                            </li>
-                          ))}
-                        </ul>
-                      </div>
+                      <Link
+                        key={category.name}
+                        href={category.href}
+                        className="group flex items-center gap-2.5 px-3 py-2.5 rounded-lg hover:bg-muted transition-colors"
+                      >
+                        <div className="h-8 w-8 rounded-md bg-primary/10 flex items-center justify-center flex-shrink-0 group-hover:bg-primary/20 transition-colors">
+                          <IconComponent className="h-4 w-4 text-primary" />
+                        </div>
+                        <div>
+                          <p className="text-sm font-medium text-foreground group-hover:text-primary transition-colors leading-tight">
+                            {category.name}
+                          </p>
+                          <p className="text-xs text-muted-foreground">
+                            {category.count}
+                          </p>
+                        </div>
+                      </Link>
                     )
                   })}
                 </div>
+                <div className="mt-3 pt-3 border-t border-border">
+                  <Link href="/products" className="inline-flex items-center gap-1.5 text-sm font-medium text-primary hover:underline">
+                    View All Products
+                    <ArrowRight className="h-3.5 w-3.5" />
+                  </Link>
+                </div>
               </div>
 
-              <div className="col-span-4 bg-muted rounded-xl p-6">
-                <div className="relative aspect-[4/3] rounded-lg overflow-hidden mb-4">
+              <div className="col-span-4 bg-muted rounded-xl p-4">
+                <div className="relative aspect-[16/9] rounded-lg overflow-hidden mb-3">
                   <Image
                     src="/images/seeds-variety.jpg"
                     alt="Premium seed varieties"
@@ -248,17 +155,16 @@ export function Header() {
                     className="object-cover"
                   />
                 </div>
-                <h4 className="font-serif text-lg font-semibold text-foreground">
+                <h4 className="font-serif text-base font-semibold text-foreground">
                   New Arrivals for Kharif Season
                 </h4>
-                <p className="text-sm text-muted-foreground mt-2">
-                  Discover our latest high-yielding hybrid varieties developed for Indian
-                  climate conditions.
+                <p className="text-xs text-muted-foreground mt-1.5">
+                  Discover our latest high-yielding hybrid varieties developed for Indian climate conditions.
                 </p>
-                <Button variant="link" className="p-0 h-auto mt-3 gap-1" asChild>
+                <Button variant="link" className="p-0 h-auto mt-2 gap-1 text-sm" asChild>
                   <Link href="/products">
                     Explore All Products
-                    <ArrowRight className="h-4 w-4" />
+                    <ArrowRight className="h-3.5 w-3.5" />
                   </Link>
                 </Button>
               </div>

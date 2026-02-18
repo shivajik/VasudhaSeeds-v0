@@ -22,7 +22,7 @@ A Next.js website for Vasudha Agri Biotech Pvt. Ltd., a pioneering seed company 
 - `styles/` - Global CSS
 
 ## Product Categories
-- Hybrid Maize (12 varieties)
+- Hybrid Maize (18 varieties, 10 with product packaging images)
 - Hybrid Paddy (6 varieties)
 - Research/Improved Paddy (10 varieties)
 - Vegetables - Chilli, Tomato, Bhendi, Bottle Gourd (10 varieties)

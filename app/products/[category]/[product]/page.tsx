@@ -108,7 +108,7 @@ export default async function ProductDetailPage({
                   <div className="space-y-6">
                     <div className="relative aspect-[4/3] rounded-xl overflow-hidden border border-border">
                       <Image
-                        src={categoryData.image}
+                        src={product.image || categoryData.image}
                         alt={product.name}
                         fill
                         className="object-cover"

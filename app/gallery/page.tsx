@@ -107,9 +107,29 @@ const galleryImages = [
     alt: "Aerial view of R&D paddy plots at Medchal farm",
     category: "R&D Fields",
   },
+  {
+    src: "/images/gallery/gallery-21.jpeg",
+    alt: "Seeds stock inside warehouse — colorful packed bags",
+    category: "Processing Plant",
+  },
+  {
+    src: "/images/gallery/gallery-22.jpeg",
+    alt: "Farmer conference session with team members wearing green turbans",
+    category: "Events",
+  },
+  {
+    src: "/images/gallery/gallery-23.jpeg",
+    alt: "Aerial view of R&D paddy nursery plots at Medchal — Hyderabad",
+    category: "R&D Fields",
+  },
+  {
+    src: "/images/gallery/gallery-24.jpeg",
+    alt: "Annual conference group photo — 2nd April 2026, Vasudha Agri Biotech",
+    category: "Events",
+  },
 ]
 
-const categories = ["All", "R&D Fields", "Processing Plant", "Maize"]
+const categories = ["All", "R&D Fields", "Processing Plant", "Maize", "Events"]
 
 export default function GalleryPage() {
   const [activeCategory, setActiveCategory] = useState("All")

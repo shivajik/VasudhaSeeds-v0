@@ -64,11 +64,19 @@ const team = [
     name: "B. Sreenivasula Reddy",
     role: "Managing Director",
     image: "/images/farmer-field.jpg",
+    bio: "",
   },
   {
     name: "B. Vasudha",
     role: "Director",
     image: "/images/quality-lab.jpg",
+    bio: "",
+  },
+  {
+    name: "Nilesh Janardhan Bhosale",
+    role: "NSM | B.Sc. Agriculture",
+    image: "/images/team-nilesh-bhosale.png",
+    bio: "Nilesh Janardhan Bhosale is a seasoned agriculture professional with over 20 years of extensive experience in Sales and Marketing within the Indian seed industry. Currently serving as Director of HiCrossBrid Seeds International Pvt. Ltd. and as National Sales Manager for HiCross Seeds and Vasudha Seeds, he oversees national sales operations, product positioning, and long-term business growth strategies. He is widely respected for his deep market knowledge, farmer-centric approach, and consistent results.",
   },
 ]
 
@@ -334,7 +342,7 @@ export default function AboutPage() {
               </p>
             </div>
 
-            <div className="grid sm:grid-cols-2 gap-8 max-w-2xl mx-auto">
+            <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-8">
               {team.map((member) => (
                 <Card key={member.name} className="bg-card overflow-hidden">
                   <div className="relative aspect-[4/3]">
@@ -349,7 +357,12 @@ export default function AboutPage() {
                     <h3 className="font-serif text-xl font-semibold text-foreground">
                       {member.name}
                     </h3>
-                    <p className="text-sm text-primary mt-1">{member.role}</p>
+                    <p className="text-sm text-primary font-medium mt-1">{member.role}</p>
+                    {member.bio && (
+                      <p className="text-sm text-muted-foreground mt-3 leading-relaxed text-left">
+                        {member.bio}
+                      </p>
+                    )}
                   </CardContent>
                 </Card>
               ))}

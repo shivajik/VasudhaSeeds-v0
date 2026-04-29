@@ -63,13 +63,13 @@ const team = [
   {
     name: "B. Sreenivasula Reddy",
     role: "Managing Director",
-    image: "/images/farmer-field.jpg",
+    image: "/images/team-sreenivasula-reddy.jpg",
     bio: "",
   },
   {
     name: "B. Vasudha",
     role: "Director",
-    image: "/images/quality-lab.jpg",
+    image: "/placeholder.svg",
     bio: "",
   },
   {

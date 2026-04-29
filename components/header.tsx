@@ -34,6 +34,7 @@ const navLinks = [
   { href: "/about", label: "About Us" },
   { href: "/products", label: "Products", hasMega: true },
   { href: "/services", label: "Services" },
+  { href: "/gallery", label: "Gallery" },
   { href: "/contact", label: "Contact" },
 ]
 
@@ -230,6 +231,13 @@ export function Header() {
                 onClick={() => setMobileMenuOpen(false)}
               >
                 Services
+              </Link>
+              <Link
+                href="/gallery"
+                className="px-3 py-2 text-base font-medium text-muted-foreground transition-colors hover:text-primary hover:bg-muted rounded-lg"
+                onClick={() => setMobileMenuOpen(false)}
+              >
+                Gallery
               </Link>
               <Link
                 href="/contact"
